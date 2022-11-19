@@ -1,0 +1,27 @@
+id: BERRY_BUSH_PATCHES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 30
+  padding: 2
+  salt: 1510
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -54
+        max: 316
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: berry_bush_patch

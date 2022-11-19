@@ -1,0 +1,50 @@
+id: ICE_SPIKES_MODERATE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 14
+  padding: 4
+  salt: 38362
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 60
+        max: 319
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:ice
+          - minecraft:snow_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:stone
+          - minecraft:snow_block
+          - minecraft:ice
+        offset: -3
+
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - ice_spike: 3
+    - ice_spike_small: 4
+    - ice_spike_huge: 2

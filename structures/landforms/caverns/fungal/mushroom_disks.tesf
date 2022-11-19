@@ -1,0 +1,15 @@
+num diskRadius = randomInt(3) + 3; //Radius of mushroom disk; 3-5
+num ranBlock = randomInt(2);
+
+str mushroomBlock = "hello:)";
+if (ranBlock == 0) mushroomBlock = "minecraft:red_mushroom_block";
+else if (ranBlock == 1) mushroomBlock = "minecraft:brown_mushroom_block";
+	
+for (num mushroomX = 0; mushroomX < diskRadius; mushroomX  = mushroomX  + 1) {
+	for (num mushroomZ = 0; mushroomZ < pow((pow(diskRadius, 2) - pow(mushroomX, 2)), 1/2); mushroomZ = mushroomZ + 1) {
+		block(mushroomX, 0, mushroomZ, mushroomBlock, false);
+		block(-mushroomX, 0, -mushroomZ, mushroomBlock, false);
+		block(-mushroomZ, 0, mushroomX, mushroomBlock, false);
+		block(mushroomZ, 0, -mushroomX, mushroomBlock, false);
+	}
+}

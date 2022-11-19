@@ -1,0 +1,49 @@
+id: CALCITE_CAVERN_SPIKE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 8
+  padding: 10
+  salt: 27575
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: -64
+        max: 319
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:calcite
+          - minecraft:stone
+          - minecraft:deepslate
+          - minecraft:amethyst_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -3
+    - type: RANDOM
+      height: *range
+      amount: 2
+      salt: 383864563   
+
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: calcite_spike_small

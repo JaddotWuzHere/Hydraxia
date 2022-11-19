@@ -1,0 +1,24 @@
+riverSampler: &riverSampler $biome_distribution/stages/rivers/river_sampler.yml:sampler
+
+stages:
+  # Regular rivers
+  - type: REPLACE_LIST
+    default-from: USE_RIVER
+    default-to:
+      - SELF: 1
+      - DRAFTY_STREAMS: 1
+    to:
+      # Biome specific rivers
+      ARCTIC_MESA:
+        - SELF: 1
+        - FROSTBITE_RIVERS: 1
+      ICEBOUND_JUNGLE:
+        - SELF: 1
+        - CHILLY_CREEKS: 1
+      REDWOOD_WOODLANDS:
+        - SELF: 1
+        - CHILLY_CREEKS: 1
+      SUGAR_PINE_WOODLANDS:
+        - SELF: 1
+        - CHILLY_CREEKS: 1
+    sampler: *riverSampler

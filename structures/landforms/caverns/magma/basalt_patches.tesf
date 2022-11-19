@@ -1,0 +1,5 @@
+num basaltHeight = randomInt(4) + 1;
+
+for (num basaltY = 0; basaltY < basaltHeight; basaltY = basaltY + 1) {
+	block(0, basaltY, 0, "minecraft:basalt", false);
+}

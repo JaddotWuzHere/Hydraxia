@@ -1,0 +1,9 @@
+id: BLACKSTONE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:basalt_deltas
+
+palette:
+  - BLACKSTONE_CAVERNS: 319
+  - BLACKSTONE_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock

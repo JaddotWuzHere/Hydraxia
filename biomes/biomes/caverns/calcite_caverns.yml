@@ -1,0 +1,15 @@
+id: CALCITE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_GEODE ]
+vanilla: minecraft:snowy_plains
+
+palette:
+  - CALCITE_CAVERNS: 319
+  - CALCITE_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  landforms:
+    - CALCITE_CAVERN_SPIKE
+  flora:
+    - AMETHYST_CLUSTERS_CALCITE

@@ -1,0 +1,41 @@
+id: LAVENDER_FLOWERS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 27245
+  threshold: 0.5
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -64
+        max: 316
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+    salt: 21348978
+  structures: 
+    - BLOCK:minecraft:allium: 3
+    - BLOCK:minecraft:pink_tulip: 2
+    - lilac: 1
+    - peony: 1

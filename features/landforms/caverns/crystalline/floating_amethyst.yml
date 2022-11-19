@@ -1,0 +1,20 @@
+id: FLOATING_AMETHYST
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 235473254
+  threshold: 0.02
+
+locator:
+  type: SURFACE
+  range:
+    min: -55
+    max: 319
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: floating_amethyst

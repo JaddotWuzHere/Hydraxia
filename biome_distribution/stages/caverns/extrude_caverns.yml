@@ -1,0 +1,53 @@
+extrusions:
+  - type: REPLACE
+    from: CAVERNS_LAND
+    sampler:
+      type: CELLULAR
+      return: CellValue
+      salt: 1252
+      frequency: 0.005
+    to:
+      - STONE_CAVERNS: 12 #stone caverns: 5                          60
+      - ANDESITE_CAVERNS: 12
+      - BLACKSTONE_CAVERNS: 12
+      - DIORITE_CAVERNS: 12
+      - GRANITE_CAVERNS: 12
+      - ARID_CAVERNS: 4 #dry caverns: 1                              12
+      - BARREN_CAVERNS: 4
+      - CRUMBLING_CAVERNS: 4
+      - BASALT_CAVERNS: 3 #hot caverns: 1                            12    
+      - MAGMA_CAVERNS: 9
+      - CALCITE_CAVERNS: 6 #misc caverns: 3                          36
+      - CRYSTALLINE_CAVERNS: 3 
+      - DRIPSTONE_CAVERNS: 15
+      - SCULK_CAVERNS: 12
+      - LUSH_CAVERNS: 12 #lush caverns: 2                            24
+      - FUNGAL_CAVERNS: 6
+      - LAVENDER_CAVERNS: 6
+      - FROSTED_CAVERNS: 36 #frost caverns: 3                        36  
+      - SPRUCE_CAVERNS: 84 #underground woodlands placeholder: 7     84
+    range:
+      min: -64
+      max: 48
+  - type: REPLACE
+    from: BIOME:SPRUCE_CAVERNS
+    sampler:
+      type: CELLULAR
+      return: CellValue
+      salt: 23452229090
+      frequency: 0.0125
+    to:
+      - ACACIA_CAVERNS: 2
+      - AUTUMNAL_CAVERNS: 10
+      - BIRCH_CAVERNS: 12
+      - DARK_OAK_CAVERNS: 10
+      - ENCHANTED_CAVERNS: 2
+      - JUNGLE_CAVERNS: 8
+      - MANGROVE_CAVERNS: 2
+      - MAPLE_CAVERNS: 10
+      - OAK_CAVERNS: 12
+      - SAKURA_CAVERNS: 6
+      - SPRUCE_CAVERNS: 10
+    range:
+      min: -64
+      max: 48

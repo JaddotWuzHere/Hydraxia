@@ -1,0 +1,35 @@
+id: OAK_TREES_BIG_DENSE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 12
+  padding: 2
+  salt: 4509
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 300
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: large_oak_tree_2

@@ -1,0 +1,26 @@
+id: SNOWDRIFT_COASTS
+type: BIOME
+extends: [ BASE, EQ_SNOWDRIFT_COASTS, DEPOSITS_RIVER ]
+
+vanilla: minecraft:snowy_beach
+
+palette:
+  - WHITE_STONE: 319
+  - WHITE_STONE_WATER: 62
+  - RIVER_BANK: 58
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 3
+    palette:
+      - BLOCK:minecraft:ice: 319
+      - RIVER_BANK: 61
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE
+
+tags:
+  - CAVERNS_LAND

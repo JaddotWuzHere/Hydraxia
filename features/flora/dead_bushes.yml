@@ -1,0 +1,28 @@
+id: DEAD_BUSHES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 479318
+  threshold: 0.02
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: 62
+        max: 316
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:dead_bush

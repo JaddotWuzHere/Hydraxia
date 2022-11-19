@@ -1,0 +1,13 @@
+id: WHITE_STONE_WATER
+type: PALETTE
+
+layers:
+  - materials: 
+      - minecraft:calcite: 2
+      - minecraft:sand: 1
+      - minecraft:diorite: 1
+      - minecraft:sand: 2
+    layers: 1
+    sampler:
+      type: WHITE_NOISE
+      salt: 2745989333
