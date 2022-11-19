@@ -1,4 +1,24 @@
 # **Hydraxia**
 A Minecraft Terra pack that turns the entire world into a winter wonderland!
 
-Hydraxia is a Terra world generation pack for Minecraft Java v1.19.2+ that completely changes the vanilla Minecraft Overworld generation! The entire world is themed to be in an eternal winter, however every single block and item (hopefully) can be obtained in survival in the default preset of this pack! This pack includes over 60 **unique** biomes to explore, including 29 cave biomes!
+Hydraxia is a Terra world generation pack for Minecraft Java v1.19.2+ that completely changes the vanilla Minecraft Overworld generation! The entire world is themed to be in an eternal winter, however every single block and item (hopefully) can be obtained in survival in the default preset of this pack. This pack includes over 60 **unique** biomes to explore, including 29 cave biomes!
+
+> **THIS PACK IS STILL WORK IN PROGRESS AND SHOULD NOT BE USED IN PRODUCTION YET**
+
+Hydraxia is still in the playtesting stage, and balancing issues and bugs may be prevalent. As long as this warning is still here, this pack is not completed yet.
+
+## Credits
+Hydraxia was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
+
+## Biome List
+A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository (soon).
+
+## Installing this pack
+
+See how to install Hydraxia here (no link atm).
+
+## Minor Pack Configuration
+Currently, this pack isn't the most flexible to modify. Options such as changing the biome size, etc will hopefully be implemented in the future.
+
+## Bugs and Features
+If you find any bugs in this pack, feel free to report them in the Issues page! Likewise, if you have any feature requests such as biome additions, etc, feel free to post those as well!
