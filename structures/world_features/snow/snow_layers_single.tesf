@@ -1,0 +1,13 @@
+block(0, 0, 0, "minecraft:snow[layers=1]", false);
+
+if(getBlock(0, -1, 0) == "minecraft:grass_block") {
+	block(0, -1, 0, "minecraft:grass_block[snowy=true]", true);
+}
+
+if(getBlock(0, -1, 0) == "minecraft:podzol") {
+	block(0, -1, 0, "minecraft:podzol[snowy=true]", true);
+}
+
+if(getBlock(0, -1, 0) == "minecraft:mycelium") {
+	block(0, -1, 0, "minecraft:mycelium[snowy=true]", true);
+}

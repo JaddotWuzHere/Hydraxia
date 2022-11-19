@@ -1,0 +1,20 @@
+id: ISLES_ICE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:ice: 2
+      - minecraft:packed_ice: 1
+      - minecraft:blue_ice: 4
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.1
+    salt: 2
+    return: CellValue

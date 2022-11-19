@@ -1,0 +1,17 @@
+id: STONE_MIX
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:cobblestone: 1
+    layers: 2
+  - materials:
+      - minecraft:cobblestone: 1
+      - minecraft:stone: 1
+    layers: 1
+    sampler:
+      type: WHITE_NOISE
+      salt: 4972
+  - materials:
+      - minecraft:stone: 1
+    layers: 1

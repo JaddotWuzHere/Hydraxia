@@ -1,0 +1,27 @@
+id: GRASS_GRANITE_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:grass_block: 6
+      - minecraft:granite: 2
+      - minecraft:deepslate: 1
+    layers: 1
+  - materials:
+      - minecraft:dirt: 5
+      - minecraft:granite: 2
+      - minecraft:deepslate: 1
+    layers: 1
+  - materials:
+      - minecraft:deepslate: 1
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.1
+    return: CellValue

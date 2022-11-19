@@ -1,0 +1,20 @@
+id: CRYSTALLINE_CAVERNS_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:deepslate: 7
+      - minecraft:calcite: 3
+      - minecraft:amethyst_block: 3
+      - minecraft:budding_amethyst: 2
+    layers: 2
+  - materials:
+      - minecraft:deepslate: 3
+      - minecraft:calcite: 2
+    layers: 1
+
+
+sampler:
+  dimensions: 2
+  type: OPEN_SIMPLEX_2S
+  frequency: 0.05

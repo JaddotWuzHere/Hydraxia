@@ -1,0 +1,19 @@
+id: ICE_MIX
+type: PALETTE
+
+layers:
+  - materials: 
+      - minecraft:ice: 2
+      - minecraft:packed_ice: 1
+      - minecraft:blue_ice: 1
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.08
+    return: CellValue

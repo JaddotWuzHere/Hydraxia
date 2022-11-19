@@ -1,0 +1,20 @@
+id: EQ_PLAINS
+type: BIOME
+abstract: true
+
+vars: &variables
+  base: 64
+  height: 10
+
+terrain:
+  sampler:
+    type: EXPRESSION
+    dimensions: 3
+    variables: *variables
+    expression: -y + base
+
+  sampler-2d:
+    dimensions: 2
+    type: EXPRESSION
+    variables: *variables
+    expression: (simplex2(x, z)+1)/2 * height

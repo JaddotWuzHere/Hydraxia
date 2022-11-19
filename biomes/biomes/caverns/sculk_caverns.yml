@@ -1,0 +1,17 @@
+id: SCULK_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_DIAMOND ]
+vanilla: minecraft:deep_dark
+
+palette:
+  - SCULK_CAVERNS: 319
+  - SCULK_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - SCULK_WEBS
+    - SCULK_PATCHES
+    - SCULK_TENDRILS
+  flora:
+    - SCULK_FLORA

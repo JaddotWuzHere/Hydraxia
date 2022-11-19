@@ -1,0 +1,26 @@
+id: LAVENDER_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_GEODE ]
+vanilla: minecraft:snowy_plains
+
+palette:
+  - GRASS_CALCITE: 319
+  - GRASS_CALCITE_DEEPSLATE_TRANSITION: 7
+  - GRASS_CALCITE_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  flora:
+    - LAVENDER_FLOWERS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - LAVENDER_TREES_MODERATE_CAVERNS
+    
+colors:
+  foliage: 0xda36ff
+  water: 0xee00ff
+  water-fog: 0xee00ff
+  fog: 0xee00ff
+  sky: 0xf566ff

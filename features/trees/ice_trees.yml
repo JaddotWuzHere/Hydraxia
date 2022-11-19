@@ -1,0 +1,39 @@
+id: ICE_TREES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 12
+  padding: 3
+  salt: 39999999999933
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 300
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:ice
+          - minecraft:snow
+          - minecraft:packed_ice
+          - minecraft:blue_ice
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: ice_tree

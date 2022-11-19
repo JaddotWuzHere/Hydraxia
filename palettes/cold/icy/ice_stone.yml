@@ -1,0 +1,8 @@
+id: ICE_STONE
+type: PALETTE
+
+layers:
+  - materials: minecraft:ice
+    layers: 4
+  - materials: minecraft:stone
+    layers: 1

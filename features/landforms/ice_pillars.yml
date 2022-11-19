@@ -1,0 +1,35 @@
+id: ICE_PILLARS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 3
+  padding: 0
+  salt: 3452
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 296
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:ice
+          - minecraft:packed_ice
+          - minecraft:blue_ice
+          - minecraft:snow_block
+        offset: -1
+
+structures:
+  distribution:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.075
+  structures:
+    - blank: 7
+    - ice_protrude: 2

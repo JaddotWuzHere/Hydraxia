@@ -1,0 +1,30 @@
+id: MAGMA_CAVE_LAVA_PILLAR
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 272576
+  threshold: 0.005
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -50
+        max: 316
+      pattern:
+        type: MATCH_SOLID
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern: 
+        type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: magma_cave_lava_pillar
