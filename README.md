@@ -10,7 +10,7 @@ Hydraxia is a Terra world generation pack for Minecraft Java v1.19.2+ that compl
 Hydraxia is still in the playtesting stage, and balancing issues and bugs may be prevalent. As long as this warning is still here, this pack is not completed yet.
 
 ## Credits
-Hydraxia was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which a lot of edited configs can be found in various assets in Hydraxia. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
+Hydraxia was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, where a lot of edited configs from can be found in various assets in Hydraxia. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
 ## Biome List
 A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository (soon).
