@@ -17,7 +17,7 @@ A list of screenshots and descriptions of all the biomes included in this pack c
 
 ## Installing this pack
 
-See how to install Hydraxia here (no link atm).
+See how to install Hydraxia [here](https://github.com/JaddotWuzHere/Hydraxia/wiki/Pack-Installation).
 
 ## Minor Pack Configuration
 Currently, this pack isn't the most flexible to modify. Options such as changing the biome size, etc will hopefully be implemented in the future.
