@@ -13,7 +13,7 @@ Hydraxia is still in the playtesting stage, and balancing issues and bugs may be
 Hydraxia was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, where a lot of edited configs from can be found in various assets in Hydraxia. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
 ## Biome List
-A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository (soon).
+A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository [here](https://github.com/JaddotWuzHere/Hydraxia/wiki).
 
 ## Installing this pack
 
