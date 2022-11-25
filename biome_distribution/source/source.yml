@@ -21,4 +21,4 @@ source:
       octaves: 4
       sampler:
         type: CELLULAR
-        frequency: 0.002
+        frequency: 0.004

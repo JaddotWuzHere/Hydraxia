@@ -71,7 +71,7 @@ stages:
   
 # biomes:
   # type: SINGLE
-  # biome: TUNDRA
+  # biome: SEARING_TORS
   
 biomes: $biome_distribution/biome_distribution.yml:biomes
     

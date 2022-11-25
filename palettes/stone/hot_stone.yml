@@ -1,0 +1,23 @@
+id: HOT_STONE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:smooth_basalt: 8
+      - minecraft:basalt: 5
+      - minecraft:magma_block: 1
+    layers: 1
+  - materials:
+      - minecraft:smooth_basalt: 3
+      - minecraft:netherrack: 1
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.14
+    return: CellValue

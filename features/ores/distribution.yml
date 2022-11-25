@@ -22,7 +22,7 @@ diamond:
     max: 16
 
 diamond-high:
-  averageCountPerChunk: 36
+  averageCountPerChunk: 28
   salt: 433535999
   range:
     min: -64
@@ -71,7 +71,7 @@ redstone-uniform:
     max: 16
 
 redstone-high:
-  averageCountPerChunk: 36
+  averageCountPerChunk: 28
   salt: 236245
   range:
     min: -64
@@ -92,7 +92,7 @@ coal-uniform:
     max: 319
 
 coal-high:
-  averageCountPerChunk: 90
+  averageCountPerChunk: 60
   salt: 233333466922420
   range:
     min: -64
@@ -113,7 +113,7 @@ gold-uniform:
     max: -48
     
 gold-high:
-  averageCountPerChunk: 75
+  averageCountPerChunk: 60
   salt: 225555236969
   range:
     min: -64
@@ -127,7 +127,7 @@ emerald:
     max: 480
 
 emerald-high:
-  averageCountPerChunk: 400
+  averageCountPerChunk: 300
   salt: 509133696969420
   range:
     min: -16

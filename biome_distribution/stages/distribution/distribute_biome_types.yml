@@ -10,7 +10,7 @@ stages:
     
     default-from: flat-humid
     default-to:
-      - FROSTCOATED_BOG: 8
+      - FROSTCOATED_BOG: 6
       - LAVENDER_FIELDS: 4
       - MUSKEG: 4
       - SCULK_SWAMP: 2
@@ -18,39 +18,39 @@ stages:
     to:
     
       flat-moderate:
-        - SNOWSWEPT_MEADOWS: 6
+        - SNOWSWEPT_MEADOWS: 4
       flat-dry:
         - TUNDRA: 4
-        - GLACIAL_OVERHANGS: 6
+        - GLACIAL_OVERHANGS: 5
         
       hills-small-humid:
         - AUTUMNAL_WOODLANDS: 4
-        - BIRCH_WOODLANDS: 6
+        - BIRCH_WOODLANDS: 5
         - MAPLE_WOODLANDS: 4
         
       hills-small-moderate:
-        - DARK_OAK_WOODLANDS: 6
-        - OAK_WOODLANDS: 6
-        - SPRUCE_WOODLANDS: 8
+        - DARK_OAK_WOODLANDS: 5
+        - OAK_WOODLANDS: 5
+        - SPRUCE_WOODLANDS: 5
       
       hills-small-dry:
         - SPRUCE_WOODLANDS: 2
         
       hills-large-humid:
-        - FROZEN_SPIRES: 4
+        - FROZEN_SPIRES: 2
         
       hills-large-moderate:
         - FROZEN_SPIRES: 4
         
       hills-large-dry:
-        - FROZEN_SPIRES: 4
+        - FROZEN_SPIRES: 2
         
       mountains-small-humid:
         - SAKURA_WOODLANDS: 4
         - FRIGID_WASTELANDS: 4
         
       mountains-small-moderate:
-        - FIR_HIGHLANDS: 6
+        - FIR_HIGHLANDS: 5
         - ENCHANTED_WOODLANDS: 1
         - BITTER_HEIGHTS: 4
         
@@ -67,4 +67,6 @@ stages:
         
       mountains-large-dry:
         - ARCTIC_MESA: 3
-        - FROSTBOUND_CHASMS: 3
+        - FROSTBOUND_CHASMS: 4
+        - PERMAFROST_CLIFFS: 3
+        - SEARING_TORS: 1
