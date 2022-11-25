@@ -71,7 +71,11 @@ stages:
   
 # biomes:
   # type: SINGLE
+<<<<<<< HEAD
   # biome: SEARING_TORS
+=======
+  # biome: TUNDRA
+>>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   
 biomes: $biome_distribution/biome_distribution.yml:biomes
     

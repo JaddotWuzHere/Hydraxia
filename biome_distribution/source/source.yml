@@ -21,4 +21,8 @@ source:
       octaves: 4
       sampler:
         type: CELLULAR
+<<<<<<< HEAD
         frequency: 0.004
+=======
+        frequency: 0.002
+>>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
