@@ -5,11 +5,7 @@ biomes:
   provider:
     type: PIPELINE
     resolution: 2
-<<<<<<< HEAD
     initial-size: 9
-=======
-    initial-size: 10
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
     blend:
       sampler:
         type: CONSTANT # handled by palette blending
@@ -23,13 +19,8 @@ biomes:
         
         - << biome_distribution/stages/smoothing/expand.yml:stages 
         - << biome_distribution/stages/smoothing/expand.yml:stages 
-<<<<<<< HEAD
         
         - << biome_distribution/stages/smoothing/expand.yml:stages
-=======
-
-        - << biome_distribution/stages/smoothing/expand.yml:stages 
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
         
         - << biome_distribution/stages/smoothing/smooth.yml:stages 
         - << biome_distribution/stages/smoothing/smooth.yml:stages 

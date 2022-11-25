@@ -1,10 +1,6 @@
 id: CHILLY_CREEKS #for mountain biomes
 type: BIOME
-<<<<<<< HEAD
 extends: [ EQ_TERRACED_MOUNTAINS_RIVER, EQ_CARVING_OCEAN, BASE, DEPOSITS_RIVER ]
-=======
-extends: [ EQ_TERRACED_MOUNTAINS_RIVER, EQ_CARVING_OCEAN ]
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
 
 vanilla: minecraft:snowy_taiga
 

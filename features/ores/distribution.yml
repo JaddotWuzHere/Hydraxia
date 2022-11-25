@@ -22,11 +22,7 @@ diamond:
     max: 16
 
 diamond-high:
-<<<<<<< HEAD
   averageCountPerChunk: 28
-=======
-  averageCountPerChunk: 36
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   salt: 433535999
   range:
     min: -64
@@ -75,11 +71,7 @@ redstone-uniform:
     max: 16
 
 redstone-high:
-<<<<<<< HEAD
   averageCountPerChunk: 28
-=======
-  averageCountPerChunk: 36
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   salt: 236245
   range:
     min: -64
@@ -100,11 +92,7 @@ coal-uniform:
     max: 319
 
 coal-high:
-<<<<<<< HEAD
   averageCountPerChunk: 60
-=======
-  averageCountPerChunk: 90
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   salt: 233333466922420
   range:
     min: -64
@@ -125,11 +113,7 @@ gold-uniform:
     max: -48
     
 gold-high:
-<<<<<<< HEAD
   averageCountPerChunk: 60
-=======
-  averageCountPerChunk: 75
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   salt: 225555236969
   range:
     min: -64
@@ -143,11 +127,7 @@ emerald:
     max: 480
 
 emerald-high:
-<<<<<<< HEAD
   averageCountPerChunk: 300
-=======
-  averageCountPerChunk: 400
->>>>>>> ea2e3d23d6d361a3e8bd599290ee0ae5df6c204e
   salt: 509133696969420
   range:
     min: -16
