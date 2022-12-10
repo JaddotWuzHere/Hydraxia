@@ -9,6 +9,9 @@ Hydraxia: A Winterland's Fantasy is a Terra world generation pack for Minecraft 
 
 Hydraxia is still in the playtesting stage, and balancing issues and bugs may be prevalent. As long as this warning is still here, this pack is not completed yet.
 
+Trailer for the pack:
+https://www.youtube.com/watch?v=pIA6BiLzD7M
+
 ## Credits
 Hydraxia was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, where a lot of edited configs from can be found in various assets in Hydraxia. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
