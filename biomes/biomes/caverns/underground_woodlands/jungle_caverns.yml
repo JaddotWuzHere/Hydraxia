@@ -27,6 +27,10 @@ features:
     - BAMBOO_PATCHES_CAVERNS
   landforms:
     - MOSSY_BOULDERS
+<<<<<<< HEAD
     - SMALL_MOSSY_BOULDER_PATCHES
   entites:
     - BATS
+=======
+    - SMALL_MOSSY_BOULDER_PATCHES
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

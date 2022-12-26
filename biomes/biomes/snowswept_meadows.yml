@@ -20,9 +20,12 @@ features:
     - SNOW_LAYERS
     - SNOW_LAYERS_SINGLE
     - TREE_SNOW
+<<<<<<< HEAD
   entities:
     - COMMON_MOBS
     - HORSES
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

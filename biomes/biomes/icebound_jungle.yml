@@ -48,11 +48,14 @@ features:
     - TREE_SNOW
     - SNOW_LAYERS
     - SNOW_LAYERS_SINGLE_SPARSE
+<<<<<<< HEAD
   entities:
     - COMMON_MOBS
     - OCELOTS
     - PARROTS
     - PANDAS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

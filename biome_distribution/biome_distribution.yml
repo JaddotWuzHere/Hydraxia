@@ -32,7 +32,11 @@ biomes:
         - << biome_distribution/stages/smoothing/smooth.yml:stages 
         - << biome_distribution/stages/smoothing/smooth.yml:stages 
         
+<<<<<<< HEAD
         - << biome_distribution/stages/rivers/add_rivers.yml:stages
         
         - << biome_distribution/stages/smoothing/smooth.yml:stages 
         - << biome_distribution/stages/smoothing/smooth.yml:stages 
+=======
+        - << biome_distribution/stages/rivers/add_rivers.yml:stages
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

@@ -2,7 +2,11 @@ id: DRIPSTONE_BARRENS
 type: BIOME
 extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_MOUNTAINS ]
 
+<<<<<<< HEAD
 vanilla: minecraft:frozen_peaks
+=======
+vanilla: minecraft:snowy_plains
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
 
 palette:
   - DRIPSTONE_BARRENS: 319
@@ -32,10 +36,13 @@ features:
     - SNOW_LAYERS_SINGLE_SPARSE
     - SNOW_LAYERS
     - TREE_SNOW
+<<<<<<< HEAD
   entities:
     - COMMON_MOBS
     - BATS
     - GOATS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

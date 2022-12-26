@@ -2,7 +2,11 @@ id: FRIGID_WASTELANDS
 type: BIOME
 extends: [ BASE, EQ_ALPHA_MOUNTAINS, EQ_CARVING_LAND, ORES_COAL ]
 
+<<<<<<< HEAD
 vanilla: minecraft:swamp
+=======
+vanilla: minecraft:snowy_plains
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
 
 colors:
   fog: 0x839e5d
@@ -30,10 +34,13 @@ features:
   snow:
     - SNOW_LAYERS_SINGLE_SPARSE
     - TREE_SNOW
+<<<<<<< HEAD
   entities:
     - COMMON_MOBS
     - BATS
     - FROGS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

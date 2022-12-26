@@ -27,8 +27,11 @@ colors:
 features:
   preprocessors:
     - LAVA_POOLS_MOUNTAIN
+<<<<<<< HEAD
   entities:
     - BLAZES
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

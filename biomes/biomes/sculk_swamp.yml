@@ -1,7 +1,11 @@
 id: SCULK_SWAMP
 type: BIOME
 extends: [ EQ_SWAMP, BASE, ORES_DIAMOND ]
+<<<<<<< HEAD
 vanilla: minecraft:deep_dark
+=======
+vanilla: minecraft:frozen_river
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
 
 colors:
   fog: 0x444f56

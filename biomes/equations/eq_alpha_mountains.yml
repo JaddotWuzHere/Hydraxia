@@ -4,7 +4,11 @@ abstract: true
 
 vars: &variables
   base: 25
+<<<<<<< HEAD
   height: 140
+=======
+  height: 100
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
   blobStrength: 30
 
 terrain:

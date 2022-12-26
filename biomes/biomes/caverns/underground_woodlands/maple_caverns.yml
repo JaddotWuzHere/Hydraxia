@@ -25,6 +25,10 @@ features:
     - FERNS
     - OAK_BUSHES
   trees:
+<<<<<<< HEAD
     - OAK_TREES_MODERATE_CAVERNS
   entites:
     - BATS
+=======
+    - OAK_TREES_MODERATE_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

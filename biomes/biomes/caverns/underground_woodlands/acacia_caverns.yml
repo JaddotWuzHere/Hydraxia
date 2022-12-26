@@ -28,6 +28,10 @@ features:
     - FERNS
     - DEAD_BUSHES
   trees:
+<<<<<<< HEAD
     - ACACIA_TREES_CAVERNS
   entites:
     - BATS
+=======
+    - ACACIA_TREES_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

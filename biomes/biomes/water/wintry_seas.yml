@@ -24,8 +24,11 @@ features:
     - SNOW_LAYERS_ICEBERG
   preprocessors:
     - BLUE_ICE_DEPOSITS
+<<<<<<< HEAD
   entities:
     - DOLPHINS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_OCEAN

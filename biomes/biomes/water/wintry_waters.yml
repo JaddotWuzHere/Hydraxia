@@ -17,9 +17,12 @@ slant:
       - GRAVEL: 61
       - << palettes/rock_layers.yml:palette
       
+<<<<<<< HEAD
 features:
   entities:
     - DOLPHINS
       
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
 tags:
   - CAVERNS_OCEAN

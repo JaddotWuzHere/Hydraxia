@@ -2,7 +2,11 @@ id: MUSKEG
 type: BIOME
 extends: [ BASE, EQ_SWAMP ]
 
+<<<<<<< HEAD
 vanilla: minecraft:swamp
+=======
+vanilla: minecraft:frozen_river
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
 
 colors:
   fog: 0x839e5d
@@ -45,10 +49,13 @@ features:
     - SNOW_LAYERS_SINGLE_SPARSE
     - TREE_SNOW
     - SNOW_LAYERS
+<<<<<<< HEAD
   entities:
     - COMMON_MOBS
     - BATS
     - FROGS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

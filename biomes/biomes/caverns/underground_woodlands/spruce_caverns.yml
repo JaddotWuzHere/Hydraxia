@@ -22,6 +22,10 @@ features:
     - FERNS
     - MOSS_CARPET
   trees:
+<<<<<<< HEAD
     - SPRUCE_TREES_DENSE_CAVERNS
   entites:
     - BATS
+=======
+    - SPRUCE_TREES_DENSE_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

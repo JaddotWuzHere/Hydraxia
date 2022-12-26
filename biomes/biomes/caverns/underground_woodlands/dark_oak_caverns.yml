@@ -23,6 +23,10 @@ features:
     - TALL_GRASS
     - FERNS
   trees:
+<<<<<<< HEAD
     - DARK_OAK_TREES_MODERATE_CAVERNS
   entites:
     - BATS
+=======
+    - DARK_OAK_TREES_MODERATE_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

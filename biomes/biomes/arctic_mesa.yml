@@ -32,9 +32,12 @@ features:
   snow:
     - SNOW_LAYERS_SINGLE
     - SNOW_LAYERS
+<<<<<<< HEAD
   entities:
     - POLAR_BEARS
     - GOATS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
     
 tags:
   - CAVERNS_LAND

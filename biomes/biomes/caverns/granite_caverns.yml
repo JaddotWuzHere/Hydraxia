@@ -6,8 +6,12 @@ vanilla: minecraft:snowy_plains
 palette:
   - GRANITE_CAVERNS: 319
   - GRANITE_CAVERNS_DEEPSLATE: 7
+<<<<<<< HEAD
   - << palettes/rock_layers.yml:palette-bedrock
   
 features:
   entities:
     - BATS
+=======
+  - << palettes/rock_layers.yml:palette-bedrock
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

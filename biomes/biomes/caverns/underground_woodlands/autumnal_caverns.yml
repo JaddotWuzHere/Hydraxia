@@ -23,6 +23,10 @@ features:
     - TALL_GRASS
     - FERNS
   trees:
+<<<<<<< HEAD
     - AUTUMNAL_TREES_CAVERNS
   entites:
     - BATS
+=======
+    - AUTUMNAL_TREES_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4

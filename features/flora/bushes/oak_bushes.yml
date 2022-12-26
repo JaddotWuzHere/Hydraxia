@@ -19,6 +19,7 @@ locator:
       range: *range
       pattern:
         type: MATCH_SET
+<<<<<<< HEAD
         blocks: 
           - minecraft:mud
           - minecraft:grass_block
@@ -28,6 +29,9 @@ locator:
           - minecraft:moss_block
           - minecraft:rooted_dirt
           - minecraft:sand
+=======
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
         offset: -1
     - type: PATTERN
       range: *range
