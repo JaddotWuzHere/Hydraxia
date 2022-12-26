@@ -1,0 +1,15 @@
+id: BASALT_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:basalt_deltas
+
+palette:
+  - BASALT_CAVERNS: 319
+  - BASALT_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - BASALT_PILLAR
+  flora:
+    - BASALT_PATCHES

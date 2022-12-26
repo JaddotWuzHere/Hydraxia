@@ -1,0 +1,55 @@
+id: MUSKEG
+type: BIOME
+extends: [ BASE, EQ_SWAMP ]
+
+vanilla: minecraft:swamp
+
+colors:
+  fog: 0x839e5d
+  grass: 0x805403
+  foliage: 0x6e5f16
+  water: 0x617b64
+  water-fog: 0x4c6559
+  sky: 0x839e5d
+
+palette:
+  - SNOWY_SWAMP: 319
+  - RIVER_BANK: 60
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 2
+    palette:
+      - SWAMP_GRASS: 319
+      - << palettes/rock_layers.yml:palette
+ 
+features:
+  preprocessors:
+    - SWAMP_WATER_POOLS
+  flora:
+    - GRASS
+    - POPPY_PATCH
+    - DANDELION_PATCH
+    - BLUE_ORCHID_PATCH
+    - LILY_PADS
+    - SUGAR_CANE
+    - OAK_BUSHES
+    - FERNS
+    - TALL_GRASS
+    - MOSS_CARPET
+  trees:
+    - SWAMP_TREES
+    - DEAD_TREES_LARGE
+    - DEAD_SWAMP_TREES
+  snow:
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+    - SNOW_LAYERS
+  entities:
+    - COMMON_MOBS
+    - BATS
+    - FROGS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

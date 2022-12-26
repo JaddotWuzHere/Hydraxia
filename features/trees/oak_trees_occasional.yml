@@ -1,0 +1,38 @@
+id: OAK_TREES_OCCASIONAL
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 64
+  padding: 12
+  salt: 2574
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 292
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+    salt: 23162
+  structures: 
+    - oak_tree: 2
+    - large_oak_tree: 1

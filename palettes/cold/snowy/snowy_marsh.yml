@@ -1,0 +1,31 @@
+id: SNOWY_MARSH
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:grass_block: 6
+      - minecraft:snow_block: 3
+      - minecraft:ice: 1
+      - minecraft:coarse_dirt: 2
+      - minecraft:moss_block: 1
+      - minecraft:mud: 2
+      - minecraft:podzol: 2
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      warp:
+        type: WHITE_NOISE
+      sampler:
+        type: CELLULAR
+        frequency: 0.1
+        return: CellValue
+  - materials:
+      - minecraft:coarse_dirt: 1
+      - minecraft:dirt: 2
+    layers: 2
+    sampler:
+      type: WHITE_NOISE
+      salt: 5912
+  - materials: minecraft:stone
+    layers: 1

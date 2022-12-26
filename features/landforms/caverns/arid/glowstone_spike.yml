@@ -1,0 +1,42 @@
+id: GLOWSTONE_SPIKE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 37146
+  threshold: 0.002
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -48
+        max: 319
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        offset: 1
+        blocks:
+          - minecraft:sand
+          - minecraft:sandstone
+          - minecraft:red_sand
+          - minecraft:red_sandstone
+          - minecraft:stone
+          - minecraft:deepslate
+    - type: RANDOM
+      height: *range
+      amount: 2
+      salt: 37376       
+        
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: glowstone_spike

@@ -1,0 +1,24 @@
+id: TREE_SNOW
+type: FEATURE
+
+distributor:
+  type: "YES"
+
+locator:
+  type: PATTERN
+  range:
+    min: 62
+    max: 316
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SET
+        blocks: $features/technical_crap/plantable/snow_plantable.yml:tree-snow-plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: BLOCK:minecraft:snow

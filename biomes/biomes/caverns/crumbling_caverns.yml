@@ -1,0 +1,20 @@
+id: CRUMBLING_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_GOLD ]
+vanilla: minecraft:badlands
+
+colors:
+  grass: 0xbfb755
+  foliage: 0xaea42a
+  fog: 0xaea42a
+
+palette:
+  - CRUMBLING_CAVERNS: 319
+  - CRUMBLING_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  flora:
+    - DEAD_BUSHES_CRUMBLING
+  entities:
+    - BATS

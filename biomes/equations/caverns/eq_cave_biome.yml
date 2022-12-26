@@ -1,0 +1,13 @@
+id: EQ_CAVE_BIOME
+abstract: true
+type: BIOME
+extends: [ EQ_CARVING_LAND ]
+
+carving:
+  update-palette: true
+
+terrain:
+  sampler:
+    type: CONSTANT
+    dimensions: 3
+    value: 10

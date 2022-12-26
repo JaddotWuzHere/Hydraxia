@@ -1,0 +1,33 @@
+id: BARRENS_DRIPSTONE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 1023
+  threshold: 0.08
+
+locator:
+  type: PATTERN
+  range:
+    min: 62
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:dripstone_block
+        offset: -1
+      - type: MATCH_SET
+        blocks:
+          - minecraft:dirt
+          - minecraft:stone
+        offset: -2
+      - type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: floor_pointed_dripstone

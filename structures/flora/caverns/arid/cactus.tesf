@@ -1,0 +1,4 @@
+num height = randomInt(5) + 2;
+for(num i = 0; i < height; i = i + 1) {
+    block(0, i, 0, "minecraft:cactus", false);
+}

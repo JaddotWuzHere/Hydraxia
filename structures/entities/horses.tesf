@@ -1,0 +1,5 @@
+num horseAmt = randomInt(3)+1;
+
+for (num i = 0; i < horseAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:horse");
+}

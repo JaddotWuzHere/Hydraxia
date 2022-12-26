@@ -1,0 +1,34 @@
+id: FROSTCOATED_BOG
+type: BIOME
+extends: [ BASE, EQ_BOG, EQ_CARVING_LAND ]
+
+vanilla: minecraft:snowy_plains
+
+palette:
+  - BOG: 319
+  - RIVER_MUD: 62
+  - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - SMALL_MOSSY_BOULDER_PATCHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - OAK_BUSHES
+    - OAK_SHRUBS
+    - MOSS_CARPET
+  trees:
+    - OAK_TREES_BOG
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - HORSES
+    - TURTLES
+    
+tags:
+  - CAVERNS_LAND

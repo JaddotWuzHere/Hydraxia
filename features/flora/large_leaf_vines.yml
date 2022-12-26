@@ -1,0 +1,68 @@
+id: LARGE_LEAF_VINES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.03
+  threshold: 0.75
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 90
+        max: 300
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: OR
+      locators:
+        - type: ADJACENT_PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 0
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: OR
+            patterns:
+              - type: MATCH_SOLID
+                offset: 1
+              - type: MATCH_SOLID
+                offset: -1
+    - type: SAMPLER_3D
+      sampler:
+        dimensions: 3
+        type: EXPRESSION
+        variables:
+          threshold: 0.5
+        expression: if(noise(x,y,z) > threshold, 1, -1)
+        samplers:
+          noise:
+            dimensions: 3
+            type: DOMAIN_WARP
+            amplitude: 10
+            warp:
+              type: FBM
+              octaves: 2
+              sampler:
+                type: OPEN_SIMPLEX_2
+            sampler:
+              type: LINEAR
+              min: -1
+              max: 0
+              sampler:
+                type: CELLULAR
+                return: Distance2Div
+                frequency: 0.06
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: BLOCK:minecraft:oak_leaves[persistent=true]

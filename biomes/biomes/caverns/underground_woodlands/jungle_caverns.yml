@@ -1,0 +1,32 @@
+id: JUNGLE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:forest
+
+palette:
+  - GRASS: 319
+  - GRASS_DEEPSLATE_TRANSITION: 7
+  - GRASS_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  flora:
+    - GRASS
+    - FERNS
+    - LARGE_LEAF_VINES_UNDERGROUND
+    - TALL_GRASS
+    - MELON_PATCHES
+    - SMALL_DRIPLEAF
+    - BIG_DRIPLEAF
+    - CROSSING_VINES_UNDERGROUND
+    - OAK_BUSHES
+    - MOSS_CARPET
+  trees:
+    - JUNGLE_TREES_CAVERNS
+    - BAMBOO_PATCHES_CAVERNS
+  landforms:
+    - MOSSY_BOULDERS
+    - SMALL_MOSSY_BOULDER_PATCHES
+  entites:
+    - BATS

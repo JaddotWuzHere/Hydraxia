@@ -1,0 +1,34 @@
+id: CACTI_ARID
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 28727
+  threshold: 0.02
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -48
+        max: 319
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH
+        block: minecraft:sand
+        offset: -1
+    - type: ADJACENT_PATTERN
+      range: *range
+      match-all: true
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: cactus

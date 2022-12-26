@@ -1,0 +1,8 @@
+palette:
+  - DEEPSLATE: 7
+  - BEDROCK: -60
+  - BLOCK:minecraft:bedrock: -64
+  
+palette-bedrock:
+  - BEDROCK: -60
+  - BLOCK:minecraft:bedrock: -64

@@ -1,0 +1,58 @@
+id: ENCHANTED_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_EMERALD ]
+
+vanilla: minecraft:snowy_taiga
+
+colors:
+  grass: 0x00ffe5
+  foliage: 0xb700ff
+  water: 0x00ffb3
+  water-fog: 0x00ffb3
+  fog: 0xf200ff
+  sky: 0x6a00ff
+
+palette:
+  - GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 2.5
+    palette:
+      - MOSSY_STONE: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3
+    palette:
+      - MOSSY_STONE_MIX: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - TUFF_STONE: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - SMALL_BOULDER_PATCHES
+    - OAK_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - ENCHANTED_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_MODERATE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - GOATS
+    - ALLAYS
+    
+tags:
+  - CAVERNS_LAND

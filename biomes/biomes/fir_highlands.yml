@@ -1,0 +1,45 @@
+id: FIR_HIGHLANDS
+type: BIOME
+extends: [ BASE, EQ_ALPHA_MOUNTAINS, EQ_CARVING_LAND, ORES_MOUNTAINS ]
+
+vanilla: minecraft:snowy_slopes
+
+palette:
+  - SNOWY_GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - RIVER_BANK: 61
+      - << palettes/rock_layers.yml:palette
+ 
+features:
+  preprocessors:
+    - POWDER_SNOW_DEPOSITS
+    - ICE_COASTLINE
+  slabs:
+    - STONE_SLABS
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - SPRUCE_BUSHES
+  trees:
+    - FIR_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

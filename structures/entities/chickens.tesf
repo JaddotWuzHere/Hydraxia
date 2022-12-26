@@ -1,0 +1,5 @@
+num chickenAmt = randomInt(4)+1;
+
+for (num i = 0; i < chickenAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:chicken");
+}

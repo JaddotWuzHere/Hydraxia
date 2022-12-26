@@ -1,0 +1,31 @@
+id: WINTRY_SEAS
+type: BIOME
+extends: [ BASE, EQ_OCEAN_DEEP, EQ_CARVING_OCEAN, DEPOSITS_RIVER ]
+
+vanilla: minecraft:deep_frozen_ocean
+
+palette:
+  - RIVER_BANK: 319
+  - << palettes/rock_layers.yml:palette
+
+slant-depth: 4
+
+slant:
+  - threshold: 2.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - GRAVEL: 61
+      - << palettes/rock_layers.yml:palette
+      
+features:
+  landforms: 
+    - ICEBERGS
+  snow:
+    - SNOW_LAYERS_ICEBERG
+  preprocessors:
+    - BLUE_ICE_DEPOSITS
+  entities:
+    - DOLPHINS
+    
+tags:
+  - CAVERNS_OCEAN

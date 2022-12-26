@@ -1,0 +1,30 @@
+id: DEAD_BUSHES_ARID
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 479318
+  threshold: 0.025
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -48
+        max: 316
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:sandstone
+          - minecraft:sand
+        offset: -1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:dead_bush

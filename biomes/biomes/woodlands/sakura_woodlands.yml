@@ -1,0 +1,55 @@
+id: SAKURA_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_GOLD ]
+
+vanilla: minecraft:snowy_taiga
+
+colors:
+  foliage: 0xff99cc
+  grass: 0xffd1ef
+  sky: 0xff7acc
+
+palette:
+  - SNOWY_GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 2.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3
+    palette:
+      - STONE_MIX: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - TUFF_STONE: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - DARK_OAK_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - SAKURA_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND

@@ -1,0 +1,42 @@
+id: ARCTIC_MESA
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_GOLD ]
+
+vanilla: minecraft:frozen_peaks
+
+palette:
+  - SNOWY_GROUND: 319
+  - ICE_LAYERS: 77
+  - << palettes/rock_layers.yml:palette
+
+slant-depth: 20
+
+slant:
+  - threshold: 2.5
+    palette:
+      - ICE_LAYERS: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 6
+    palette:
+      - BLOCK:minecraft:blue_ice: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 7
+    palette:
+      - ICE_LAYERS: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - ICE_SPIKES_SPARSE
+    - ICE_PILLARS
+  snow:
+    - SNOW_LAYERS_SINGLE
+    - SNOW_LAYERS
+  entities:
+    - POLAR_BEARS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER
+  

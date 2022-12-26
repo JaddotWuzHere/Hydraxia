@@ -1,0 +1,27 @@
+id: SPRUCE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_COAL ]
+vanilla: minecraft:forest
+
+palette:
+  - SNOWY_TAIGA: 319
+  - SNOWY_TAIGA_DEEPSLATE_TRANSITION: 7
+  - SNOWY_TAIGA_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - MOSSY_BOULDERS
+    - SMALL_MOSSY_BOULDER_PATCHES
+    - SPRUCE_BUSHES
+  flora:
+    - BERRY_BUSH_PATCHES
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - MOSS_CARPET
+  trees:
+    - SPRUCE_TREES_DENSE_CAVERNS
+  entites:
+    - BATS

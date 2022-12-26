@@ -1,0 +1,48 @@
+id: SNOWY_TAIGA_ISLES
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:grass_block: 2
+      - minecraft:coarse_dirt: 1
+      - minecraft:podzol: 3
+    layers: 1
+    sampler:
+      type: DOMAIN_WARP
+      amplitude: 1
+      warp:
+        type: GAUSSIAN
+      sampler:
+        type: FBM
+        octaves: 2
+        sampler:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.04
+          salt: 293
+  - materials:
+      - minecraft:dirt: 2
+    layers: 1
+  - materials:
+      - minecraft:dirt: 3
+      - minecraft:ice: 1
+      - minecraft:packed_ice: 1
+      - minecraft:blue_ice: 1
+    layers: 2
+    sampler:
+      type: WHITE_NOISE
+      salt: 69
+  - materials:
+      - minecraft:ice: 2
+      - minecraft:packed_ice: 1
+      - minecraft:blue_ice: 4
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      warp:
+        type: WHITE_NOISE
+      sampler:
+        type: CELLULAR
+        frequency: 0.1
+        salt: 3
+        return: CellValue

@@ -1,0 +1,28 @@
+id: AUTUMNAL_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_GOLD ]
+vanilla: minecraft:forest
+
+colors:
+  grass: 0xffb280
+  foliage: 0xff6a19
+
+palette:
+  - GRASS_GRANITE: 319
+  - GRASS_GRANITE_DEEPSLATE_TRANSITION: 7
+  - GRASS_GRANITE_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - SMALL_GRANITE_BOULDER_PATCHES
+    - AUTUMNAL_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - AUTUMNAL_TREES_CAVERNS
+  entites:
+    - BATS

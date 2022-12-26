@@ -1,0 +1,32 @@
+id: FROGS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 238638653583856
+  threshold: 0.00035
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 62
+        max: 316
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:frog-spawnable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:frog-in-blocks
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: frogs

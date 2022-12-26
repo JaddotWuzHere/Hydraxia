@@ -1,0 +1,37 @@
+id: AZALEA_TREES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 18
+  padding: 3
+  salt: 2661
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 300
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - large_azalea_tree: 16
+    - azalea_tree: 6

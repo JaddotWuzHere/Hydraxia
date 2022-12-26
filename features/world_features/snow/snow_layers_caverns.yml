@@ -1,0 +1,32 @@
+id: SNOW_LAYERS_CAVERNS
+type: FEATURE
+
+distributor:
+  type: "YES"
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -48
+        max: 319
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:deepslate
+          - minecraft:tuff
+          - minecraft:snow_block
+          - minecraft:stone
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH
+        block: minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: snow_layers_single

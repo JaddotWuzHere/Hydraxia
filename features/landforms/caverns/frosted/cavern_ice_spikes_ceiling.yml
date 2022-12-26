@@ -1,0 +1,40 @@
+id: CAVERN_ICE_SPIKES_CEILING
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 12
+  padding: 8
+  salt: 23464
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -48
+        max: 319
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        offset: 1
+        blocks:
+          - minecraft:ice
+          - minecraft:packed_ice
+          - minecraft:blue_ice
+          - minecraft:snow_block
+          - minecraft:stone
+          - minecraft:deepslate
+    - type: RANDOM
+      height: *range
+      amount: 2
+      salt: 37376 
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: ice_spike_small_ceiling

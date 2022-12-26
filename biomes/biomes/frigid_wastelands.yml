@@ -1,0 +1,40 @@
+id: FRIGID_WASTELANDS
+type: BIOME
+extends: [ BASE, EQ_ALPHA_MOUNTAINS, EQ_CARVING_LAND, ORES_COAL ]
+
+vanilla: minecraft:swamp
+
+colors:
+  fog: 0x839e5d
+  grass: 0x5f421a
+  foliage: 0x6e5f16
+  water: 0x617b64
+  water-fog: 0x4c6559
+  sky: 0x839e5d
+
+palette:
+  - SNOWY_MARSH: 319
+  - RIVER_MUD: 61
+  - << palettes/rock_layers.yml:palette
+  
+features:
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - MUSHROOMS
+    - MOSS_CARPET
+  trees:
+    - DEAD_TREES_MODERATE
+    - DEAD_TREES_LARGE
+  snow:
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - BATS
+    - FROGS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

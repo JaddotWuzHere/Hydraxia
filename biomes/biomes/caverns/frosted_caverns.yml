@@ -1,0 +1,21 @@
+id: FROSTED_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:snowy_plains
+
+palette:
+  - FROSTED_CAVERNS: 319
+  - FROSTED_CAVERNS_DEEPSLATE: 7
+  - FROSTED_CAVERNS_NEAR_LAVA: -48
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  landforms:
+    - CAVERN_ICE_SPIKES_FLOOR
+    - CAVERN_ICE_SPIKES_CEILING
+    - ICE_PILLAR
+  snow:
+    - SNOW_LAYERS_CAVERNS
+    - SNOW_LAYERS_NEAR_LAVA
+  entities:
+    - BATS
