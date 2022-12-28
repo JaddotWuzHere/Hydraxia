@@ -1,0 +1,5 @@
+num bearAmt = randomInt(3)+1;
+
+for (num i = 0; i < bearAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:polar_bear");
+}

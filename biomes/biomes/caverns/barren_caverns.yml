@@ -1,0 +1,24 @@
+id: BARREN_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_GOLD ]
+vanilla: minecraft:badlands
+
+colors:
+  grass: 0xbf632e
+  foliage: 0xa84913
+  fog: 0xa84913
+
+palette:
+  - BARREN_CAVERNS: 319
+  - BARREN_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  flora:
+    - DEAD_BUSHES_BARREN
+    - CACTI_BARREN
+    - BARREN_LEAF_BUSHES
+  landforms:
+    - GLOWSTONE_SPIKE
+  entities:
+    - BATS

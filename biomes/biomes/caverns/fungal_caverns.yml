@@ -1,0 +1,21 @@
+id: FUNGAL_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:mushroom_fields
+
+palette:
+  - FUNGAL_CAVERNS: 319
+  - FUNGAL_CAVERNS_DEEPSLATE: 7
+  - BLOCK:minecraft:deepslate: -48
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  landforms:
+    - MUSHROOM_DISKS
+  flora:
+    - CAVERN_MUSHROOMS
+    - SHROOMLIGHT_CEILING_PATCHES
+  trees:
+    - HUGE_MUSHROOMS_CAVERNS
+  entities:
+    - BATS

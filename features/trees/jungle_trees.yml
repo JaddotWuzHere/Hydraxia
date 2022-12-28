@@ -1,0 +1,31 @@
+id: JUNGLE_TREES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2356
+  threshold: 0.004
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 0
+        max: 296
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: 4
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: jungle_tree

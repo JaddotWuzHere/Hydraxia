@@ -1,0 +1,59 @@
+id: ICEBOUND_JUNGLE
+type: BIOME
+extends: [ EQ_TERRACED_MOUNTAINS, BASE, EQ_CARVING_LAND, ORES_MOUNTAINS ]
+vanilla: minecraft:snowy_taiga
+
+palette:
+  - GRASS: 319
+  - RIVER_BANK: 63
+  - << palettes/rock_layers.yml:palette
+
+slant:
+  - threshold: 2.5
+    palette:
+      - MOSSY_STONE: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3
+    palette:
+      - MOSSY_STONE_MIX: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - TUFF_STONE: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 4
+    palette:
+      - ICE_STONE: 319
+      - << palettes/rock_layers.yml:palette
+
+features:
+  flora:
+    - GRASS
+    - FERNS
+    - LARGE_LEAF_VINES
+    - TALL_GRASS
+    - MELON_PATCHES
+    - SMALL_DRIPLEAF
+    - BIG_DRIPLEAF
+    - CROSSING_VINES
+    - OAK_BUSHES
+    - MOSS_CARPET
+  trees:
+    - JUNGLE_TREES
+    - BAMBOO_PATCHES
+  landforms:
+    - MOSSY_BOULDERS
+    - SMALL_MOSSY_BOULDER_PATCHES
+  snow:
+    - TREE_SNOW
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+  entities:
+    - COMMON_MOBS
+    - OCELOTS
+    - PARROTS
+    - PANDAS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

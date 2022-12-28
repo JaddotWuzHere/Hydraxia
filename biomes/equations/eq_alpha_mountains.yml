@@ -1,0 +1,27 @@
+id: EQ_ALPHA_MOUNTAINS
+type: BIOME
+abstract: true
+
+vars: &variables
+  base: 25
+  height: 140
+  blobStrength: 30
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    expression: -y + base + (noise(x, z)+1)/2 * height + (noise3(x, y*3, z)+1)/2 * blobStrength
+    variables: *variables
+    samplers:
+      noise:
+        dimensions: 2
+        type: FBM
+        octaves: 5
+        sampler:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.005
+      noise3:
+        dimensions: 3
+        type: OPEN_SIMPLEX_2
+        frequency: 0.018

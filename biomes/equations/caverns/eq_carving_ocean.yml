@@ -1,0 +1,15 @@
+id: EQ_CARVING_OCEAN
+type: BIOME
+abstract: true
+
+carving:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    variables:
+      "<<":
+        - biomes/equations/caverns/eq_carving_land.yml:carving.sampler.variables
+      carvingMaxHeight: 40
+
+    expression: $biomes/equations/caverns/eq_carving_land.yml:carving.sampler.expression
+    samplers: $biomes/equations/caverns/eq_carving_land.yml:carving.sampler.samplers

@@ -1,0 +1,5 @@
+num ocelotAmt = randomInt(4)+1;
+
+for (num i = 0; i < ocelotAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:ocelot");
+}

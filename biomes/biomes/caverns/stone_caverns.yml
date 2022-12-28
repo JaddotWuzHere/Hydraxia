@@ -1,0 +1,12 @@
+id: STONE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_MOUNTAINS ]
+vanilla: minecraft:snowy_plains
+
+palette:
+  - BLOCK:minecraft:stone: 319
+  - << palettes/rock_layers.yml:palette
+  
+features:
+  entities:
+    - BATS

@@ -1,0 +1,11 @@
+id: WHITE_STONE
+type: PALETTE
+
+layers:
+  - materials: 
+      - minecraft:calcite: 2
+      - minecraft:diorite: 1
+    layers: 1
+    sampler:
+      type: WHITE_NOISE
+      salt: 10987

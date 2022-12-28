@@ -1,0 +1,39 @@
+id: BITTER_HEIGHTS
+type: BIOME
+extends: [ BASE, EQ_ALPHA_MOUNTAINS, EQ_CARVING_LAND, ORES_EMERALD ]
+
+vanilla: minecraft:frozen_peaks
+
+palette:
+  - SNOWY_GROUND: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:ice: 319
+      - RIVER_BANK: 61
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  preprocessors:
+    - POWDER_SNOW_DEPOSITS
+    - ICE_COASTLINE
+  slabs:
+    - STONE_SLABS
+  landforms:
+    - ICE_BOULDERS
+    - ICE_PILLARS
+  trees:
+    - ICE_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE
+  entities:
+    - POLAR_BEARS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

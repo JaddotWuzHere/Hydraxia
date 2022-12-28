@@ -1,0 +1,32 @@
+id: GOATS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 23466609671234444446666666678
+  threshold: 0.0003
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 62
+        max: 316
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:goat-spawnable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:goat-in-blocks
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: goats

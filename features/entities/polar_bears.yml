@@ -1,0 +1,32 @@
+id: POLAR_BEARS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 666666666666663333333333333333354
+  threshold: 0.0003
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 62
+        max: 316
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:bear-spawnable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:bear-in-blocks
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: polar_bears

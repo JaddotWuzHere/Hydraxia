@@ -1,0 +1,40 @@
+precipitation-map: &precipitation-map
+  dimensions: 2
+  type: FBM
+  octaves: 2
+  sampler:
+    type: OPEN_SIMPLEX_2
+    salt: 5055
+    frequency: 0.02
+    
+stages:
+  - type: REPLACE_LIST
+    sampler: *precipitation-map
+    
+    default-from: flat
+    default-to:
+      - flat-humid: 6
+      - flat-moderate: 6
+      - flat-dry: 4
+      
+    to:
+    
+      hills-small:
+        - hills-small-humid: 8
+        - hills-small-moderate: 8
+        - hills-small-dry: 4
+        
+      hills-large:
+        - hills-large-humid: 2
+        - hills-large-moderate: 2
+        - hills-large-dry: 2
+        
+      mountains-small:
+        - mountains-small-humid: 4
+        - mountains-small-moderate: 8
+        - mountains-small-dry: 8
+        
+      mountains-large:
+        - mountains-large-humid: 8
+        - mountains-large-moderate: 4
+        - mountains-large-dry: 4

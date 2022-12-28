@@ -1,0 +1,5 @@
+num slimeAmt = randomInt(2)+1;
+
+for (num i = 0; i < slimeAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:slime");
+}

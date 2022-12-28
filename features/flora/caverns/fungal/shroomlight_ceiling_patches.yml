@@ -1,0 +1,31 @@
+id: SHROOMLIGHT_CEILING_PATCHES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 2
+  padding: 0
+  salt: 27375
+
+locator:
+  type: PATTERN
+  range:
+    min: -50
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: 1
+
+structures:
+  distribution:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.15
+    salt: 2098
+  structures:
+    - blank: 14
+    - shroomlight_ceiling: 1

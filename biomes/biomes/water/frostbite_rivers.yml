@@ -1,0 +1,21 @@
+id: FROSTBITE_RIVERS #for ice mountain biomes
+type: BIOME
+extends: [ EQ_TERRACED_MOUNTAINS_RIVER, EQ_CARVING_OCEAN ]
+
+vanilla: minecraft:frozen_peaks
+
+palette:
+  - SNOWY_ICE: 319
+  - << palettes/rock_layers.yml:palette
+
+slant:
+  - threshold: 2.7
+    palette:
+      - BLOCK:minecraft:ice: 319
+      - << palettes/rock_layers.yml:palette
+      
+features:
+  landforms:
+    - ICE_PILLARS_CEILING
+  snow:
+    - SNOW_LAYERS

@@ -1,0 +1,36 @@
+id: DEAD_TREES_MODERATE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 7
+  padding: 2
+  salt: 2356
+
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: dead_tree

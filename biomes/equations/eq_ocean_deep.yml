@@ -1,0 +1,15 @@
+id: EQ_OCEAN_DEEP
+type: BIOME
+abstract: true
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: LINEAR_HEIGHTMAP
+    base: 20
+  sampler-2d:
+    dimensions: 2
+    type: EXPRESSION
+    variables:
+      height: 30
+    expression: "|simplex2(x/2, z/2)| * height"

@@ -1,0 +1,32 @@
+source:
+  type: SAMPLER
+  biomes:
+    - WINTRY_SEAS: 26
+    - WINTRY_WATERS: 14
+    - SNOWDRIFT_COASTS: 4
+    - flat: 16
+    - hills-small: 12
+    - hills-large: 6
+    - mountains-small: 14
+    - mountains-large: 12
+    # - WINTRY_SEAS: 26
+    # - WINTRY_WATERS: 14
+    # - SNOWYDRIFT_COASTS: 4
+    # - SNOWSWEPT_MEADOWS: 16
+    # - OAK_WOODLANDS: 12
+    # - FIR_HIGHLANDS: 6
+    # - FROZEN_SPIRES: 14
+    # - LAVENDER_CRAGS: 12
+  sampler:
+    dimensions: 2
+    type: LINEAR
+    min: -1
+    max: -0.65
+    sampler:
+      type: FBM
+      lacunarity: 3
+      gain: 0.4
+      octaves: 4
+      sampler:
+        type: CELLULAR
+        frequency: 0.004

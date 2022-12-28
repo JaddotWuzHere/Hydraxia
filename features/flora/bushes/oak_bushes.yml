@@ -1,0 +1,44 @@
+id: OAK_BUSHES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 465
+  threshold: 0.01
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -54
+        max: 300
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:mud
+          - minecraft:grass_block
+          - minecraft:podzol
+          - minecraft:dirt
+          - minecraft:coarse_dirt
+          - minecraft:moss_block
+          - minecraft:rooted_dirt
+          - minecraft:sand
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: oak_bush

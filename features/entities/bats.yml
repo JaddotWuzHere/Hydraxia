@@ -1,0 +1,29 @@
+id: BATS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 1234123423458
+  threshold: 0.001
+
+locator:
+  type: AND
+  locators:
+    - type: RANDOM
+      height: &range
+        min: -52
+        max: 316
+      amount: 1
+      salt: 234678
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: bats

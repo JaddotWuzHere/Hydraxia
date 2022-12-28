@@ -1,0 +1,42 @@
+id: AUTUMNAL_WOODLANDS
+type: BIOME
+extends: [ EQ_HILLS, BASE, EQ_CARVING_LAND, ORES_GOLD ]
+vanilla: minecraft:snowy_taiga
+
+colors:
+  grass: 0xffb280
+  foliage: 0xff6a19
+
+palette:
+  - GRASS: 319
+  - RIVER_BANK: 64
+  - RIVER_MUD: 61
+  - << palettes/rock_layers.yml:palette
+
+slant:
+  - threshold: 3.5
+    palette:
+      - GRANITE_SLANT: 319
+      - << palettes/rock_layers.yml:palette
+
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - AUTUMNAL_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - PUMPKIN_PATCHES
+  trees:
+    - AUTUMNAL_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_MODERATE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    
+tags:
+  - CAVERNS_LAND

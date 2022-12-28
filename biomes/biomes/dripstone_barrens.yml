@@ -1,0 +1,42 @@
+id: DRIPSTONE_BARRENS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_MOUNTAINS ]
+
+vanilla: minecraft:frozen_peaks
+
+palette:
+  - DRIPSTONE_BARRENS: 319
+  - << palettes/rock_layers.yml:palette
+
+colors:
+  foliage: 0xff6a19
+      
+slant:
+  - threshold: 3
+    palette:
+      - BLOCK:minecraft:dripstone_block: 319
+      - RIVER_BANK: 61
+      - << palettes/rock_layers.yml:palette
+      
+features:
+  landforms:
+    - DRIPSTONE_SPIKES
+  flora:
+    - BARRENS_DRIPSTONE
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - DRIPSTONE_BARREN_TREES
+  snow:
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - SNOW_LAYERS
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - BATS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

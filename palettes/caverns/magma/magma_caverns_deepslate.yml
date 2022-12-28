@@ -1,0 +1,24 @@
+id: MAGMA_CAVERNS_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:deepslate: 4
+      - minecraft:magma_block: 2
+      - minecraft:blackstone: 5
+    layers: 1
+  - materials:
+      - minecraft:deepslate: 5
+      - minecraft:blackstone: 3
+    layers: 1
+
+
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.2
+    return: CellValue

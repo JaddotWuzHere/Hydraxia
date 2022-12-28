@@ -1,0 +1,18 @@
+id: EQ_BOG
+type: BIOME
+abstract: true
+
+
+vars: &variables
+  base: 64
+  
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    variables: *variables
+    expression: ((-((y / base)^2)) + 1) + ((simplex2(x*2, z*2)/4))
+
+  sampler-2d:
+    dimensions: 2
+    type: CONSTANT

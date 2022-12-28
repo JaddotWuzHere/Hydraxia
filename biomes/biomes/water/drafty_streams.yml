@@ -1,0 +1,29 @@
+id: DRAFTY_STREAMS
+type: BIOME
+extends: [ BASE, EQ_RIVER, EQ_CARVING_OCEAN, DEPOSITS_RIVER ]
+
+vanilla: minecraft:frozen_river
+
+palette:
+  - SNOWY_GRASS: 319
+  - RIVER_MUD: 75
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  flora:
+    - SUGAR_CANE
+  postplacement:
+    - SNOW_LAYERS
+    - TREE_SNOW
+    - SNOW_LAYERS_SINGLE
+  entities:
+    - TURTLES
+    
+tags:
+  - CAVERNS_OCEAN

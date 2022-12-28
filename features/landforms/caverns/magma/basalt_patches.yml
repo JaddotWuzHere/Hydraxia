@@ -1,0 +1,31 @@
+id: BASALT_PATCHES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 2
+  padding: 0
+  salt: 27375
+
+locator:
+  type: PATTERN
+  range:
+    min: -50
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: -1
+
+structures:
+  distribution:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.2
+    salt: 275
+  structures:
+    - blank: 8
+    - basalt_patches: 1

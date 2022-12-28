@@ -1,0 +1,47 @@
+id: SWAMP_GRASS_DEEPSLATE_TRANSITION
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:grass_block: 8
+      - minecraft:mud: 6
+      - minecraft:deepslate: 1
+      - minecraft:stone: 1
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      warp:
+        type: WHITE_NOISE
+      sampler:
+        type: CELLULAR
+        frequency: 0.1
+        return: CellValue
+  - materials:
+      - minecraft:dirt: 8
+      - minecraft:mud: 5
+      - minecraft:deepslate: 1
+      - minecraft:stone: 1
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      warp:
+        type: WHITE_NOISE
+      sampler:
+        type: CELLULAR
+        frequency: 0.1
+        return: CellValue
+  - materials:
+      - minecraft:deepslate: 1
+      - minecraft:stone: 1
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      warp:
+        type: WHITE_NOISE
+      sampler:
+        type: CELLULAR
+        frequency: 0.25
+        return: CellValue

@@ -1,0 +1,5 @@
+num pillarHeight = randomInt(12) + 6;
+
+for(num blockY = 0; blockY < pillarHeight; blockY = blockY + 1) {
+	block(0, blockY, 0, "minecraft:ice", true);
+}

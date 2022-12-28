@@ -1,0 +1,5 @@
+num lightHeight = randomInt(4) + 1;
+
+for (num lightY = 0; lightY < lightHeight; lightY = lightY + 1) {
+	block(0, -lightY, 0, "minecraft:shroomlight", false);
+}

@@ -1,0 +1,38 @@
+single-plantable-blocks:
+  - minecraft:grass_block
+  - minecraft:coarse_dirt
+  - minecraft:mycelium
+  - minecraft:moss_block
+  - minecraft:podzol
+  - minecraft:mud
+  - minecraft:dripstone_block
+  - minecraft:packed_mud
+  
+plantable-blocks:
+  - minecraft:stone
+  - minecraft:andesite
+  - minecraft:diorite
+  - minecraft:granite
+  - minecraft:calcite
+  - minecraft:snow_block
+  - minecraft:tuff
+  - minecraft:deepslate
+  
+tree-snow-plantable-blocks:
+  - minecraft:oak_leaves
+  - minecraft:oak_log
+  - minecraft:oak_wood
+  - minecraft:spruce_leaves
+  - minecraft:spruce_log
+  - minecraft:spruce_wood
+  - minecraft:jungle_leaves
+  - minecraft:jungle_log
+  - minecraft:jungle_wood
+  - minecraft:birch_leaves
+  - minecraft:birch_log
+  - minecraft:birch_wood
+  - minecraft:dark_oak_leaves
+  - minecraft:dark_oak_log
+  - minecraft:dark_oak_wood
+  - minecraft:azalea_leaves
+  - minecraft:flowering_azalea_leaves

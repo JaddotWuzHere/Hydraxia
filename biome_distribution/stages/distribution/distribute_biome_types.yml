@@ -1,0 +1,86 @@
+variation-map: &variation-map
+  dimensions: 2
+  type: CELLULAR
+  return: CellValue
+  frequency: 0.03
+  
+stages:
+  - type: REPLACE_LIST
+    sampler: *variation-map
+    
+    default-from: flat-humid
+    default-to:
+      - FROSTCOATED_BOG: 6
+      - LAVENDER_FIELDS: 4
+      - MUSKEG: 4
+      - SCULK_SWAMP: 2
+      
+    to:
+    
+      flat-moderate:
+        - SNOWSWEPT_MEADOWS: 4
+      flat-dry:
+        - TUNDRA: 4
+        - GLACIAL_OVERHANGS: 5
+        
+      hills-small-humid:
+        - AUTUMNAL_WOODLANDS: 4
+        - BIRCH_WOODLANDS: 5
+        - MAPLE_WOODLANDS: 4
+        
+      hills-small-moderate:
+        - DARK_OAK_WOODLANDS: 5
+        - OAK_WOODLANDS: 5
+        - SPRUCE_WOODLANDS: 5
+        
+      flat-dry:
+        - TUNDRA: 4
+        - GLACIAL_OVERHANGS: 6
+        
+      hills-small-humid:
+        - AUTUMNAL_WOODLANDS: 4
+        - BIRCH_WOODLANDS: 6
+        - MAPLE_WOODLANDS: 4
+        
+      hills-small-moderate:
+        - DARK_OAK_WOODLANDS: 6
+        - OAK_WOODLANDS: 6
+        - SPRUCE_WOODLANDS: 8
+      
+      hills-small-dry:
+        - SPRUCE_WOODLANDS: 2
+        
+      hills-large-humid:
+        - FROZEN_SPIRES: 2
+        
+      hills-large-moderate:
+        - FROZEN_SPIRES: 4
+        
+      hills-large-dry:
+        - FROZEN_SPIRES: 2
+        
+      mountains-small-humid:
+        - SAKURA_WOODLANDS: 4
+        - FRIGID_WASTELANDS: 4
+        
+      mountains-small-moderate:
+        - FIR_HIGHLANDS: 5
+        - ENCHANTED_WOODLANDS: 1
+        - BITTER_HEIGHTS: 4
+        
+      mountains-small-dry:
+        - DRIPSTONE_BARRENS: 4
+        
+      mountains-large-humid:
+        - REDWOOD_WOODLANDS: 4
+        - LAVENDER_CRAGS: 4
+        - ICEBOUND_JUNGLE: 8
+        
+      mountains-large-moderate:
+        - SUGAR_PINE_WOODLANDS: 6
+        
+      mountains-large-dry:
+        - ARCTIC_MESA: 3
+        - FROSTBOUND_CHASMS: 4
+        - PERMAFROST_CLIFFS: 3
+        - SEARING_TORS: 1

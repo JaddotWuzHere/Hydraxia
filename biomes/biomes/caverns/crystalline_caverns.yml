@@ -1,0 +1,26 @@
+id: CRYSTALLINE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_REDSTONE ]
+vanilla: minecraft:snowy_plains
+
+colors:
+  foliage: 0xda36ff
+  water: 0xee00ff
+  water-fog: 0xee00ff
+  fog: 0xee00ff
+  sky: 0xf566ff
+
+palette:
+  - CRYSTALLINE_CAVERNS: 319
+  - CRYSTALLINE_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - AMETHYST_CLUSTER_STRIPS
+  landforms:
+    - CALCITE_CAVERN_SPIKE
+    - AMETHYST_PILLAR
+    - FLOATING_AMETHYST
+  flora:
+    - AMETHYST_CLUSTERS

@@ -1,0 +1,36 @@
+id: HUGE_MUSHROOMS_CAVERNS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 15
+  padding: 7
+  salt: 2725
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -48
+        max: 319
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:mycelium
+          - minecraft:podzol
+          - minecraft:stone
+          - minecraft:deepslate
+          - minecraft:red_mushroom_block
+          - minecraft:brown_mushroom_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: huge_mushrooms

@@ -1,0 +1,20 @@
+id: FLOOR_DRIPSTONE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 24564567
+  threshold: 0.005
+
+locator:
+  type: SURFACE
+  range:
+    min: 32
+    max: 92
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: dripstone_finder

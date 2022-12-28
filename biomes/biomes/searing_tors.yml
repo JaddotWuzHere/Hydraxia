@@ -1,0 +1,34 @@
+id: SEARING_TORS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_EMERALD ]
+
+vanilla: minecraft:basalt_deltas
+
+palette:
+  - HOT_STONE: 319
+  - HOT_STONE_TRANSITION: 76
+  - DEEPSLATE_MIX: 68
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:blackstone: 319
+      - << palettes/rock_layers.yml:palette
+  
+colors:
+  grass: 0x784614
+  foliage: 0x784614
+  water: 0x054763
+  water-fog: 0x054763
+  fog: 0xbf3600
+  sky: 0xf0985d
+  
+features:
+  preprocessors:
+    - LAVA_POOLS_MOUNTAIN
+  entities:
+    - BLAZES
+    
+tags:
+  - CAVERNS_LAND

@@ -1,0 +1,36 @@
+id: COMMON_MOBS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2395870021305290001
+  threshold: 0.00025
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 62
+        max: 316
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:spawnable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/spawnable.yml:in-blocks
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - pigs: 1
+    - cows: 1
+    - sheep: 1
+    - chickens: 1

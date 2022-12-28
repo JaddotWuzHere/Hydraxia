@@ -1,0 +1,17 @@
+id: MAGMA_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:basalt_deltas
+
+palette:
+  - MAGMA_CAVERNS: 319
+  - MAGMA_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  preprocessors:
+    - MAGMA_CAVE_LAVA_POOLS
+  landforms:
+    - MAGMA_CAVE_LAVA_PILLAR
+  flora:
+    - BASALT_PATCHES

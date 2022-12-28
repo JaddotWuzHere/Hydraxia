@@ -1,0 +1,137 @@
+spawnable-blocks:
+  - minecraft:grass_block[snowy=true]
+  - minecraft:grass_block
+  - minecraft:podzol
+  - minecraft:podzol[snowy=true]
+  - minecraft:dirt
+  - minecraft:coarse_dirt
+  - minecraft:moss_block
+  
+in-blocks:
+  - minecraft:air
+  - minecraft:grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  - minecraft:snow
+  
+bear-spawnable-blocks:
+  - minecraft:grass_block[snowy=true]
+  - minecraft:grass_block
+  - minecraft:dirt
+  - minecraft:ice
+  - minecraft:blue_ice
+  - minecraft:packed_ice
+  - minecraft:snow_block
+  - minecraft:stone
+  - minecraft:cobblestone
+  
+bear-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  
+frog-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:dirt
+  - minecraft:mud
+  - minecraft:coarse_dirt
+  - minecraft:moss_block
+  - minecraft:podzol
+  
+frog-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  - minecraft:moss_carpet
+  - minecraft:grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  
+mooshroom-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:mycelium
+  - minecraft:dirt
+  - minecraft:coarse_dirt
+  - minecraft:podzol
+  
+mooshroom-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  - minecraft:red_mushroom
+  - minecraft:brown_mushroom
+  
+ocelot-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:oak_leaves
+  - minecraft:dirt
+  - minecraft:coarse_dirt
+  - minecraft:podzol
+  - minecraft:moss_block
+  - minecraft:mud
+  - minecraft:sand
+  
+ocelot-in-blocks:
+  - minecraft:air
+  - minecraft:grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  - minecraft:snow
+  
+parrot-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:oak_leaves
+  
+parrot-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  
+turtle-spawnable-blocks:
+  - minecraft:sand
+  
+turtle-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  
+goat-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:snow_block
+  - minecraft:powder_snow
+  - minecraft:ice
+  - minecraft:blue_ice
+  - minecraft:packed_ice
+  - minecraft:stone
+  - minecraft:gravel
+  
+goat-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  - minecraft:grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  
+panda-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:dirt
+  - minecraft:coarse_dirt
+  - minecraft:podzol
+  - minecraft:moss_block
+  - minecraft:mud
+  - minecraft:sand
+  
+panda-in-blocks:
+  - minecraft:air
+  - minecraft:snow
+  - minecraft:grass
+  - minecraft:tall_grass
+  - minecraft:fern
+  
+slime-spawnable-blocks:
+  - minecraft:grass_block
+  - minecraft:dirt
+  - minecraft:coarse_dirt
+  - minecraft:podzol
+  - minecraft:moss_block
+  - minecraft:mud
+  - minecraft:sand
+  
+slime-in-blocks:
+  - minecraft:air
+  - minecraft:snow

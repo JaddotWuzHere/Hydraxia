@@ -1,0 +1,24 @@
+id: ARID_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:desert
+
+colors:
+  grass: 0xbfb755
+  foliage: 0xaea42a
+  fog: 0xaea42a
+
+palette:
+  - ARID_CAVERNS: 319
+  - ARID_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  flora:
+    - DEAD_BUSHES_ARID
+    - CACTI_ARID
+    - ARID_LEAF_BUSHES
+  landforms:
+    - GLOWSTONE_SPIKE
+  entities:
+    - BATS

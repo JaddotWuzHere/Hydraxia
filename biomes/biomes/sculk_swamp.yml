@@ -1,0 +1,55 @@
+id: SCULK_SWAMP
+type: BIOME
+extends: [ EQ_SWAMP, BASE, ORES_DIAMOND ]
+
+vanilla: minecraft:deep_dark
+
+colors:
+  fog: 0x444f56
+  grass: 0x163b46
+  foliage: 0x195a58
+  water: 0x102e38
+  water-fog: 0x171921
+  sky: 0x1c2742
+
+palette:
+  - SCULK_SWAMP: 319
+  - RIVER_BANK: 60
+  - << palettes/rock_layers.yml:palette
+
+slant:
+  - threshold: 2
+    palette:
+      - SCULK_GRASS: 319
+      - << palettes/rock_layers.yml:palette
+
+slant-depth: 1
+
+features:
+  preprocessors:
+    - SWAMP_WATER_POOLS
+  flora:
+    - GRASS
+    - POPPY_PATCH
+    - DANDELION_PATCH
+    - BLUE_ORCHID_PATCH
+    - LILY_PADS
+    - SUGAR_CANE
+    - OAK_BUSHES
+    - TALL_GRASS
+  sculk:
+    - SCULK_FLORA
+    - SCULK_TENDRILS
+    - SCULK_PATCHES
+    - SCULK_VEINS
+  trees:
+    - SWAMP_TREES
+    - DEAD_SWAMP_TREES
+    - DEAD_TREES_LARGE
+  snow:
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER
