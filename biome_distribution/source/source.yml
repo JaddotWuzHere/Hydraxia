@@ -9,6 +9,7 @@ source:
     - hills-large: 6
     - mountains-small: 14
     - mountains-large: 12
+<<<<<<< HEAD
     # - WINTRY_SEAS: 26
     # - WINTRY_WATERS: 14
     # - SNOWYDRIFT_COASTS: 4
@@ -17,6 +18,8 @@ source:
     # - FIR_HIGHLANDS: 6
     # - FROZEN_SPIRES: 14
     # - LAVENDER_CRAGS: 12
+=======
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
   sampler:
     dimensions: 2
     type: LINEAR

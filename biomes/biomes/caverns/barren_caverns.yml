@@ -19,6 +19,16 @@ features:
     - CACTI_BARREN
     - BARREN_LEAF_BUSHES
   landforms:
+<<<<<<< HEAD
     - GLOWSTONE_SPIKE
   entities:
     - BATS
+=======
+<<<<<<< HEAD
+    - GLOWSTONE_SPIKE
+  entities:
+    - BATS
+=======
+    - GLOWSTONE_SPIKE
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96

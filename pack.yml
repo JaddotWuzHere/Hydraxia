@@ -1,5 +1,13 @@
 id: HYDRAXIA
+<<<<<<< HEAD
 version: 0.2.2
+=======
+<<<<<<< HEAD
+version: 0.3.0
+=======
+version: 2.0.0
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
 author: "Jaddot"
 
 #If you find any bugs or any features you wish to include in this pack, 
@@ -68,14 +76,32 @@ stages:
     type: FEATURE
   - id: snow
     type: FEATURE
+<<<<<<< HEAD
   - id: entities
     type: FEATURE
     
+=======
+<<<<<<< HEAD
+  - id: entities
+    type: FEATURE
+  
+biomes:
+  type: SINGLE
+  biome: JUNGLE_CAVERNS
+  
+# biomes: $biome_distribution/biome_distribution.yml:biomes
+=======
+  
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
 # biomes:
   # type: SINGLE
   # biome: SEARING_TORS
   
 biomes: $biome_distribution/biome_distribution.yml:biomes
+<<<<<<< HEAD
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
     
 samplers:
   "<<":

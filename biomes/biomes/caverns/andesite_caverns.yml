@@ -6,8 +6,19 @@ vanilla: minecraft:snowy_plains
 palette:
   - ANDESITE_CAVERNS: 319
   - ANDESITE_CAVERNS_DEEPSLATE: 7
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
   - << palettes/rock_layers.yml:palette-bedrock
   
 features:
   entities:
+<<<<<<< HEAD
     - BATS
+=======
+    - BATS
+=======
+  - << palettes/rock_layers.yml:palette-bedrock
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96

@@ -2,7 +2,15 @@ id: FROSTBOUND_CHASMS
 type: BIOME
 extends: [ BASE, EQ_CHASMS, ORES_MOUNTAINS ]
 
+<<<<<<< HEAD
 vanilla: minecraft:jagged_peaks
+=======
+<<<<<<< HEAD
+vanilla: minecraft:jagged_peaks
+=======
+vanilla: minecraft:snowy_plains
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
 
 palette:
   - ICE_MIX: 319
@@ -23,7 +31,17 @@ features:
     - ICE_SPIKES_MODERATE
     - FLOOR_DRIPSTONE
   snow:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
     - SNOW_LAYERS
   entities:
     - POLAR_BEARS
     - GOATS
+<<<<<<< HEAD
+=======
+=======
+    - SNOW_LAYERS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96

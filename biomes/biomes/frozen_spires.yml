@@ -25,8 +25,17 @@ features:
     - ICE_PILLARS
   snow:
     - SNOW_LAYERS
+<<<<<<< HEAD
   entities:
     - POLAR_BEARS
 
+=======
+<<<<<<< HEAD
+  entities:
+    - POLAR_BEARS
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+    
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
 tags:
   - CAVERNS_LAND

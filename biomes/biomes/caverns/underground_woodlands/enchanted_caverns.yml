@@ -27,7 +27,18 @@ features:
     - TALL_GRASS
     - FERNS
   trees:
+<<<<<<< HEAD
     - ENCHANTED_TREES_CAVERNS
   entities:
     - BATS
     - ALLAYS
+=======
+<<<<<<< HEAD
+    - ENCHANTED_TREES_CAVERNS
+  entities:
+    - BATS
+    - ALLAYS
+=======
+    - ENCHANTED_TREES_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96

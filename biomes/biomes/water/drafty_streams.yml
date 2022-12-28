@@ -22,8 +22,16 @@ features:
     - SNOW_LAYERS
     - TREE_SNOW
     - SNOW_LAYERS_SINGLE
+<<<<<<< HEAD
   entities:
     - TURTLES
+=======
+<<<<<<< HEAD
+  entities:
+    - TURTLES
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
     
 tags:
   - CAVERNS_OCEAN

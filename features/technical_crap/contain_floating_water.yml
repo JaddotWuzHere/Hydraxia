@@ -19,18 +19,40 @@ locator:
         - type: PATTERN
           range: *range
           pattern:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
             type: MATCH_SET
             blocks: 
               - minecraft:water
               - minecraft:ice
+<<<<<<< HEAD
+=======
+=======
+            type: MATCH
+            block: minecraft:water
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
             offset: 1
         - type: ADJACENT_PATTERN
           range: *range
           pattern:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
             type: MATCH_SET
             blocks:
               - minecraft:water
               - minecraft:ice
+<<<<<<< HEAD
+=======
+=======
+            type: MATCH
+            block: minecraft:water
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
             offset: 0
 
 structures:

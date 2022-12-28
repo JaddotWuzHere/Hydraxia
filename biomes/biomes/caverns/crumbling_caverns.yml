@@ -15,6 +15,16 @@ palette:
   
 features:
   flora:
+<<<<<<< HEAD
     - DEAD_BUSHES_CRUMBLING
   entities:
     - BATS
+=======
+<<<<<<< HEAD
+    - DEAD_BUSHES_CRUMBLING
+  entities:
+    - BATS
+=======
+    - DEAD_BUSHES_CRUMBLING
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96

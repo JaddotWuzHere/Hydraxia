@@ -2,7 +2,15 @@ id: LAVENDER_CRAGS
 type: BIOME
 extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_GEODE ]
 
+<<<<<<< HEAD
 vanilla: minecraft:jagged_peaks
+=======
+<<<<<<< HEAD
+vanilla: minecraft:frozen_peaks
+=======
+vanilla: minecraft:jagged_peaks
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
 
 palette:
   - SNOWY_GRASS_CALCITE: 319
@@ -38,10 +46,19 @@ features:
     - SNOW_LAYERS
     - SNOW_LAYERS_SINGLE_SPARSE
     - TREE_SNOW
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
   entities:
     - COMMON_MOBS
     - GOATS
     - ALLAYS
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
     
 tags:
   - CAVERNS_LAND

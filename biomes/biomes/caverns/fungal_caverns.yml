@@ -16,6 +16,16 @@ features:
     - CAVERN_MUSHROOMS
     - SHROOMLIGHT_CEILING_PATCHES
   trees:
+<<<<<<< HEAD
     - HUGE_MUSHROOMS_CAVERNS
   entities:
     - BATS
+=======
+<<<<<<< HEAD
+    - HUGE_MUSHROOMS_CAVERNS
+  entities:
+    - BATS
+=======
+    - HUGE_MUSHROOMS_CAVERNS
+>>>>>>> 181b7450983158cf1ac6a085aabd0ab6ea46cfe4
+>>>>>>> dec54fccd953268c48a2a2b3af757982a5018b96
