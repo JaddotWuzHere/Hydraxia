@@ -1,0 +1,32 @@
+id: FROZEN_SPIRES
+type: BIOME
+extends: [ BASE, EQ_SMALL_MOUNTAINS, EQ_CARVING_LAND, ORES_MOUNTAINS ]
+
+vanilla: minecraft:ice_spikes
+
+palette:
+  - SNOWY_ICE: 319
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 2.7
+    palette:
+      - BLOCK:minecraft:ice: 319
+      - << palettes/rock_layers.yml:palette
+ 
+features:
+  preprocessors:
+    - POWDER_SNOW_DEPOSITS
+    - ICE_COASTLINE
+  slabs:
+    - STONE_SLABS
+  landforms:
+    - ICE_SPIKES_MODERATE
+    - ICE_PILLARS
+  snow:
+    - SNOW_LAYERS
+  entities:
+    - POLAR_BEARS
+
+tags:
+  - CAVERNS_LAND

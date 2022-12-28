@@ -1,0 +1,5 @@
+id: BASALT_DEPOSIT
+type: ORE
+extends: ABSTRACT_DEPOSIT
+
+material: minecraft:smooth_basalt

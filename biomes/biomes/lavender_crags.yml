@@ -1,0 +1,47 @@
+id: LAVENDER_CRAGS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_GEODE ]
+
+vanilla: minecraft:jagged_peaks
+
+palette:
+  - SNOWY_GRASS_CALCITE: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+ 
+slant:
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:calcite: 319
+      - RIVER_BANK: 61
+      - << palettes/rock_layers.yml:palette
+ 
+colors:
+  foliage: 0xda36ff
+  water: 0xee00ff
+  water-fog: 0xee00ff
+  fog: 0xee00ff
+  sky: 0xf566ff
+ 
+features:
+  landforms:
+    - SMALL_BOULDER_PATCHES
+    - SMALL_MOSSY_BOULDER_PATCHES
+    - SMALL_CALCITE_BOULDER_PATCHES
+  flora:
+    - LAVENDER_FLOWERS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - LAVENDER_TREES_MODERATE
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - GOATS
+    - ALLAYS
+    
+tags:
+  - CAVERNS_LAND

@@ -1,0 +1,39 @@
+id: LAVENDER_FIELDS
+type: BIOME
+extends: [ BASE, EQ_BOG, EQ_CARVING_LAND, ORES_GEODE ]
+
+vanilla: minecraft:snowy_plains
+
+palette:
+  - GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+ 
+colors:
+  foliage: 0xda36ff
+  water: 0xee00ff
+  water-fog: 0xee00ff
+  fog: 0xee00ff
+  sky: 0xf566ff
+ 
+features:
+  landforms:
+    - SMALL_BOULDER_PATCHES
+    - SMALL_MOSSY_BOULDER_PATCHES
+  flora:
+    - LAVENDER_FLOWERS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - LAVENDER_TREES_RARE
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - HORSES
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

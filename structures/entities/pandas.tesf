@@ -1,0 +1,5 @@
+num pandaAmt = randomInt(3)+1;
+
+for (num i = 0; i < pandaAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:panda");
+}

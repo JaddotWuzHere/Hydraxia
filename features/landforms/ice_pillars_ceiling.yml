@@ -1,0 +1,28 @@
+id: ICE_PILLARS_CEILING
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 3
+  padding: 0
+  salt: 26565666669999
+
+locator:
+  type: PATTERN
+  range:
+    min: 0
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: 1
+
+structures:
+  distribution:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.075
+  structures: ice_protrude_ceiling

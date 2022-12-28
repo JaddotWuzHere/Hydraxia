@@ -1,0 +1,33 @@
+id: AMETHYST_CLUSTERS_CALCITE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2838760012
+  threshold: 0.025
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: -64
+        max: 319
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH
+        block: minecraft:calcite
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: BLOCK:minecraft:amethyst_cluster

@@ -1,0 +1,25 @@
+id: LUSH_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:lush_caves
+
+palette:
+  - LUSH_CAVERNS: 319
+  - LUSH_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  preprocessors:
+    - LUSH_CAVE_WATER_POOLS
+  landforms:
+    - GREAT_AZALEA_TREES
+  flora:
+    - LARGE_LEAF_VINES_UNDERGROUND
+    - MOSS_CARPET
+    - CAVE_GLOW_BERRIES
+    - CAVE_SPORE_BLOSSOMS
+    - SMALL_DRIPLEAF_CAVES
+    - BIG_DRIPLEAF_CAVES
+    - GRASS_CAVES
+    - AZALEA_BLOCK
+    - FLOWERING_AZALEA_BLOCK

@@ -1,0 +1,28 @@
+id: FUNGAL_CAVERNS_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:deepslate: 6
+      - minecraft:mycelium: 2
+      - minecraft:podzol: 2
+      - minecraft:red_mushroom_block: 1
+      - minecraft:brown_mushroom_block: 1
+    layers: 1
+  - materials:
+      - minecraft:deepslate: 8
+      - minecraft:red_mushroom_block: 1
+      - minecraft:brown_mushroom_block: 1
+    layers: 1
+  - materials: minecraft:deepslate
+    layers: 1
+
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.1
+    return: CellValue

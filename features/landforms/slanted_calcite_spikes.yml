@@ -1,0 +1,44 @@
+id: SLANTED_CALCITE_SPIKES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 10
+  padding: 5
+  salt: 23444444
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 60
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:ice
+          - minecraft:packed_ice
+          - minecraft:snow_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -3
+
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: slanted_calcite_spike

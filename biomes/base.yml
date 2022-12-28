@@ -1,0 +1,33 @@
+id: BASE
+type: BIOME
+abstract: true
+extends:
+  - DEPOSITS_GENERIC
+  - ORES_GENERIC
+
+slant-depth: 15
+
+ocean:
+  palette: BLOCK:minecraft:water
+  level: 62
+  palette: FROZEN_OCEAN
+
+features:
+  global-preprocessors:
+    - LAVA_FLOOR
+    - UNDERGROUND_LAVA_COLUMNS
+    - CONTAIN_FLOATING_WATER
+    - CAVE_GLOW_LICHEN
+    - TEXTURED_STONE_SLANT
+  underwater-flora:
+    - KELP
+    - SEAGRASS
+    - SEA_PICKLES
+    
+colors:
+  grass: 0xcfffe4
+  foliage: 0xcffff4
+  water: 0x80f9ff
+  water-fog: 0x2ed5ff
+  fog: 0xa8f5ff
+  sky: 0x63fcff

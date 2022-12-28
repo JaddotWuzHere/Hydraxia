@@ -1,0 +1,5 @@
+id: COBBLESTONE_DEPOSIT
+type: ORE
+extends: ABSTRACT_DEPOSIT
+
+material: minecraft:cobblestone

@@ -1,0 +1,33 @@
+id: ENCHANTED_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE, ORES_EMERALD ]
+vanilla: minecraft:forest
+
+colors:
+  grass: 0x00ffe5
+  foliage: 0xb700ff
+  water: 0x00ffb3
+  water-fog: 0x00ffb3
+  fog: 0xf200ff
+  sky: 0x6a00ff
+
+palette:
+  - GRASS: 319
+  - GRASS_DEEPSLATE_TRANSITION: 7
+  - GRASS_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - SMALL_BOULDER_PATCHES
+    - OAK_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - ENCHANTED_TREES_CAVERNS
+  entities:
+    - BATS
+    - ALLAYS

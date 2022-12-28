@@ -1,0 +1,41 @@
+id: GLACIAL_OVERHANGS
+type: BIOME
+extends: [ BASE, EQ_GLACIAL_OVERHANGS, EQ_CARVING_LAND ]
+
+vanilla: minecraft:jagged_peaks
+
+palette:
+  - SNOWY_GROUND: 319
+  - << palettes/rock_layers.yml:palette
+
+slant:
+  - threshold: 3
+    palette:
+      - BLOCK:minecraft:powder_snow: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 4
+    palette:
+      - BLOCK:minecraft:snow_block: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 5
+    palette:
+      - BLOCK:minecraft:blue_ice: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 6
+    palette:
+      - BLOCK:minecraft:ice: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - ICE_PILLARS
+    - ICE_PILLARS_CEILING
+    - SLANTED_CALCITE_SPIKES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE
+  entities:
+    - POLAR_BEARS
+    
+tags:
+  - CAVERNS_LAND

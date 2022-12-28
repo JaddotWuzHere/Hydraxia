@@ -1,0 +1,52 @@
+id: ICE_SPIKES_SPARSE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 32
+  padding: 8
+  salt: 12347
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 60
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:ice
+          - minecraft:packed_ice
+          - minecraft:grass_block
+          - minecraft:snow_block
+          - minecraft:coarse_dirt
+          - minecraft:moss_block
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:dirt
+          - minecraft:stone
+          - minecraft:snow_block
+        offset: -3
+
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures:
+    - ice_spike: 1

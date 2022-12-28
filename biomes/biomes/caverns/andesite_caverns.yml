@@ -1,0 +1,13 @@
+id: ANDESITE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:snowy_plains
+
+palette:
+  - ANDESITE_CAVERNS: 319
+  - ANDESITE_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  entities:
+    - BATS

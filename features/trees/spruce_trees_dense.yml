@@ -1,0 +1,38 @@
+id: SPRUCE_TREES_DENSE
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 6
+  padding: 2
+  salt: 273486
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 300
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+    salt: 20987
+  structures: 
+    - spruce_tree: 2
+    - large_spruce_tree: 1

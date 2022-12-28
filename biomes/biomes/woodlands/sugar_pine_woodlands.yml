@@ -1,0 +1,45 @@
+id: SUGAR_PINE_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_TERRACED_MOUNTAINS, EQ_CARVING_LAND, ORES_COAL ]
+
+vanilla: minecraft:snowy_taiga
+
+palette:
+  - SNOWY_TAIGA: 319
+  - RIVER_BANK: 64
+  - RIVER_MUD: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 3
+    palette:
+      - COARSE_DIRT: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - SPRUCE_BUSHES
+  flora:
+    - GRASS
+    - FERNS
+    - TALL_GRASS
+    - BERRY_BUSH_PATCHES
+  trees:
+    - SUGAR_PINE_TREES
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_SPARSE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    - GOATS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

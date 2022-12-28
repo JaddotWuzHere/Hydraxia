@@ -1,0 +1,44 @@
+id: SPRUCE_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_HILLS, EQ_CARVING_LAND, ORES_COAL ]
+
+vanilla: minecraft:snowy_taiga
+
+palette:
+  - SNOWY_TAIGA: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 3
+    palette:
+      - COARSE_DIRT: 319
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - MOSSY_BOULDERS
+    - SMALL_MOSSY_BOULDER_PATCHES
+    - SPRUCE_BUSHES
+  flora:
+    - BERRY_BUSH_PATCHES
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - MOSS_CARPET
+  trees:
+    - SPRUCE_TREES_DENSE
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_MODERATE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

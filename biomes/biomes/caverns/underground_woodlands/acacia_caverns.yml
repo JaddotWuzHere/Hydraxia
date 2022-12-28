@@ -1,0 +1,33 @@
+id: ACACIA_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:savanna
+
+colors:
+  fog: 0xaea42a
+  grass: 0xbfb755
+  foliage: 0xaea42a
+  water: 0x2c8b9Cc
+  water-fog: 0x2c8b9Cc
+  sky: 0xbfb755
+
+palette:
+  - SAVANNAH: 319
+  - SAVANNAH_DEEPSLATE_TRANSITION: 7
+  - SAVANNAH_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - SMALL_SANDSTONE_BOULDER_PATCHES
+    - ACACIA_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - DEAD_BUSHES
+  trees:
+    - ACACIA_TREES_CAVERNS
+  entites:
+    - BATS

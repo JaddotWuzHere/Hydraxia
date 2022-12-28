@@ -1,0 +1,41 @@
+id: SEAGRASS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5252
+  threshold: 0.5
+
+locator:
+  type: PATTERN
+  range:
+    min: -54
+    max: 62
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:water
+        offset: 0
+      - type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:aquatic-plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: DOMAIN_WARP
+    amplitude: 3
+    warp:
+      type: GAUSSIAN
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.03
+    salt: 3696
+  structures:
+    - tall_seagrass: 1
+    - BLOCK:minecraft:seagrass: 1
+    - blank: 4
+    - BLOCK:minecraft:seagrass: 1
+    - tall_seagrass: 1

@@ -1,0 +1,23 @@
+id: DRIPSTONE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:dripstone_caves
+
+palette:
+  - DRIPSTONE_CAVERNS: 319
+  - DRIPSTONE_CAVERNS_DEEPSLATE: 7
+  - << palettes/rock_layers.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - DRIPSTONE_COLUMNS
+    - DRIPSTONE_CAVE_POOLS
+    - CEILING_DRIPSTONE_BLOCKS
+  landforms:
+    - DRIPSTONE_CAVES_LARGE_CEILING_DRIPSTONE
+    - DRIPSTONE_CAVES_BOULDER_PATCHES
+  flora:
+    - DRIPSTONE_CAVES_CEILING_POINTED_DRIPSTONE
+    - DRIPSTONE_CAVES_FLOOR_POINTED_DRIPSTONE
+  entities:
+    - BATS

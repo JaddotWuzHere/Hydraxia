@@ -1,0 +1,34 @@
+id: MANGROVE_TREES_CAVERNS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 12
+  padding: 3
+  salt: 37434567
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -54
+        max: 300
+      pattern:
+        type: MATCH_SET
+        blocks: $features/technical_crap/plantable/plantable.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+          - minecraft:water
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: mangrove_tree_caverns

@@ -1,0 +1,36 @@
+id: ICE_LAYERS
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:ice: 8
+      - minecraft:packed_ice: 2
+      - minecraft:ice: 6
+      - minecraft:snow_block: 2
+      - minecraft:packed_ice: 4
+      - minecraft:blue_ice: 3
+      - minecraft:snow_block: 3
+      - minecraft:blue_ice: 3
+      - minecraft:packed_ice: 4
+      - minecraft:snow_block: 2
+      - minecraft:ice: 6
+      - minecraft:packed_ice: 2
+      - minecraft:ice: 8
+    layers: 1
+
+sampler:
+  dimensions: 3
+  type: EXPRESSION
+  expression: noise(y+offset(x,z)*10,0)
+  samplers:
+    noise:
+      dimensions: 2
+      type: VALUE
+      frequency: 0.2
+    offset:
+      dimensions: 2
+      type: FBM
+      octaves: 2
+      sampler:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.005

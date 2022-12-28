@@ -1,0 +1,45 @@
+id: MAPLE_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_HILLS, EQ_CARVING_LAND ]
+
+vanilla: minecraft:snowy_taiga
+
+colors:
+  foliage: 0xff0000
+  fog: 0xffa570
+  sky: 0xff8570
+  grass: 0xffa570
+
+palette:
+  - SNOWY_GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 3
+    palette:
+      - ICE_STONE: 319
+      - RIVER_BANK: 64
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - OAK_BUSHES
+  trees:
+    - OAK_TREES_BIG_DENSE
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

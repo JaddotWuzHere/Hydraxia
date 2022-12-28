@@ -1,0 +1,95 @@
+id: HYDRAXIA
+version: 0.2.2
+author: "Jaddot"
+
+#If you find any bugs or any features you wish to include in this pack, 
+#feel free to make an Issue for it on GitHub!
+
+#Made for Minecraft v1.19.x
+
+#--------------------------------------------------------------------------
+#DISCLAIMER | Hydraxia: A Winterland's Fantasy includes many configuration
+#files from the default Overworld config packaged with Terra. I have slightly 
+#edited such files, however the majority of the work in these specific files 
+#were created by the authors of the pack I mentioned above.
+#
+#Check out the default Overworld pack here:
+#https://github.com/PolyhedralDev/TerraOverworldConfig
+#--------------------------------------------------------------------------
+
+generator: NOISE_3D
+
+addons:
+  biome-provider-pipeline: "1.+"
+  biome-provider-single: "1.+"
+  biome-provider-extrusion: "1.+"
+  chunk-generator-noise-3d: "1.+"
+  config-biome: "1.+"
+  config-flora: "1.+"
+  config-noise-function: "1.+"
+  config-ore: "1.+"
+  config-palette: "1.+"
+  config-distributors: "1.+"
+  config-locators: "1.+"
+  config-feature: "1.+"
+  structure-terrascript-loader: "1.+"
+  structure-sponge-loader: "1.+"
+  language-yaml: "1.+"
+  generation-stage-feature: "1.+"
+  structure-function-check-noise-3d: "1.+"
+  palette-block-shortcut: "1.+"
+  structure-block-shortcut: "1.+"
+  terrascript-function-sampler: "1.+"
+  
+stages:
+  - id: global-preprocessors
+    type: FEATURE
+  - id: preprocessors
+    type: FEATURE
+  - id: landforms
+    type: FEATURE
+  - id: slabs
+    type: FEATURE
+  - id: ores
+    type: FEATURE
+  - id: deposits
+    type: FEATURE
+  - id: river-decoration
+    type: FEATURE
+  - id: trees
+    type: FEATURE
+  - id: underwater-flora
+    type: FEATURE
+  - id: sculk
+    type: FEATURE
+  - id: flora
+    type: FEATURE
+  - id: postprocessors
+    type: FEATURE
+  - id: snow
+    type: FEATURE
+  - id: entities
+    type: FEATURE
+    
+# biomes:
+  # type: SINGLE
+  # biome: SEARING_TORS
+  
+biomes: $biome_distribution/biome_distribution.yml:biomes
+    
+samplers:
+  "<<":
+    - samplers/samplers.yml:samplers
+    
+functions:
+  "<<":
+    - functions/terrace.yml:functions
+    - functions/lerp.yml:functions
+    - functions/maskSmooth.yml:functions
+    
+blend:
+  palette:
+    resolution: 2
+    amplitude: 2
+    sampler:
+      type: WHITE_NOISE

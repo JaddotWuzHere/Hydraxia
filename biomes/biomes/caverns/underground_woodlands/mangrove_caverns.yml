@@ -1,0 +1,30 @@
+id: MANGROVE_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:mangrove_swamp
+
+colors:
+  grass: 0x4C763C
+  foliage: 0x8DB127
+  water: 0x3A7A6A
+  water-fog: 0x4D7A60
+
+palette:
+  - SWAMP_GRASS: 319
+  - SWAMP_GRASS_DEEPSLATE_TRANSITION: 7
+  - SWAMP_GRASS_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  preprocessors:
+    - MANGROVE_WATER_POOLS
+  landforms:
+    - SMALL_MOSSY_BOULDER_PATCHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - SEAGRASS
+  trees:
+    - MANGROVE_TREES_CAVERNS

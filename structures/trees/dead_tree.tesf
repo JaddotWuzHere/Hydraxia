@@ -1,0 +1,47 @@
+num trunkHeight = randomInt(7) + 5;
+num clumpAmt = randomInt(4); // 0 to 3 leaf clumps
+
+// Tree trunk
+for (num trunkY = 0; trunkY < trunkHeight; trunkY = trunkY + 1) { 
+	block(0, trunkY, 0, "minecraft:spruce_log");
+}
+
+// Leaf clumps
+
+for (num clumpNum = 0; clumpNum < clumpAmt; clumpNum = clumpNum + 1) {
+	num leafClumpHeight = trunkHeight - randomInt(4) - 2;
+	num clumpStyle = randomInt(2); // If style is 0, single block style; if style is 1, corner style
+	
+	num placement = randomInt(4);
+	
+	if (clumpStyle == 0) {
+		if (placement == 0) block(1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+		else if (placement == 1) block(-1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+		else if (placement == 2) block(0, leafClumpHeight, 1, "minecraft:oak_leaves[distance=1]", false);
+		else if (placement == 3) block(0, leafClumpHeight, -1, "minecraft:oak_leaves[distance=1]", false);
+	}
+	else if (clumpStyle == 1) {
+		if (placement == 0) {
+			block(1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+			block(1, leafClumpHeight, 1, "minecraft:oak_leaves[distance=1]", false);
+			block(0, leafClumpHeight, 1, "minecraft:oak_leaves[distance=1]", false);
+		} 
+		else if (placement == 1) {
+			block(-1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+			block(-1, leafClumpHeight, 1, "minecraft:oak_leaves[distance=1]", false);
+			block(0, leafClumpHeight, 1, "minecraft:oak_leaves[distance=1]", false);
+		}
+		else if (placement == 2) {
+			block(-1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+			block(-1, leafClumpHeight, -1, "minecraft:oak_leaves[distance=1]", false);
+			block(0, leafClumpHeight, -1, "minecraft:oak_leaves[distance=1]", false);
+		}
+		else if (placement == 3) {
+			block(1, leafClumpHeight, 0, "minecraft:oak_leaves[distance=1]", false);
+			block(1, leafClumpHeight, -1, "minecraft:oak_leaves[distance=1]", false);
+			block(0, leafClumpHeight, -1, "minecraft:oak_leaves[distance=1]", false);
+		}
+	}
+}
+
+block(0, -1, 0, "minecraft:rooted_dirt");

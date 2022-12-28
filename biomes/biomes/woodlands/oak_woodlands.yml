@@ -1,0 +1,43 @@
+id: OAK_WOODLANDS
+type: BIOME
+extends: [ BASE, EQ_HILLS, EQ_CARVING_LAND ]
+
+vanilla: minecraft:snowy_taiga
+
+palette:
+  - SNOWY_GRASS: 319
+  - RIVER_BANK: 61
+  - << palettes/rock_layers.yml:palette
+  
+slant:
+  - threshold: 3
+    palette:
+      - ICE_STONE: 319
+      - RIVER_BANK: 64
+      - << palettes/rock_layers.yml:palette
+  - threshold: 3.5
+    palette:
+      - BLOCK:minecraft:stone: 319
+      - << palettes/rock_layers.yml:palette
+  
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+    - OAK_BUSHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+  trees:
+    - OAK_TREES_DENSE
+  snow:
+    - SNOW_LAYERS
+    - SNOW_LAYERS_SINGLE_MODERATE
+    - TREE_SNOW
+  entities:
+    - COMMON_MOBS
+    
+tags:
+  - CAVERNS_LAND
+  - USE_RIVER

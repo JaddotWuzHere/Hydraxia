@@ -1,0 +1,25 @@
+id: BIRCH_CAVERNS
+type: BIOME
+extends: [ EQ_CAVE_BIOME, BASE ]
+vanilla: minecraft:forest
+
+palette:
+  - GRASS: 319
+  - GRASS_DEEPSLATE_TRANSITION: 7
+  - GRASS_DEEPSLATE: 0
+  - BLOCK:minecraft:deepslate: -50
+  - << palettes/rock_layers.yml:palette-bedrock
+  
+features:
+  landforms:
+    - BOULDERS
+    - SMALL_BOULDER_PATCHES
+  flora:
+    - GRASS
+    - TALL_GRASS
+    - FERNS
+    - BIRCH_BUSHES
+  trees:
+    - BIRCH_TREES_MODERATE_CAVERNS
+  entites:
+    - BATS

@@ -1,0 +1,34 @@
+id: MUSHROOM_DISKS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 377345
+  threshold: 0.5
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -48
+        max: 316
+      pattern:
+        type: MATCH_SOLID
+        offset: 0
+    - type: ADJACENT_PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: RANDOM
+      height: *range
+      amount: 1
+      salt: 75752
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: mushroom_disks

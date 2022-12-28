@@ -1,0 +1,5 @@
+num mooshroomAmt = randomInt(4)+1;
+
+for (num i = 0; i < mooshroomAmt; i = i + 1) {
+	entity(0, 0, 0, "minecraft:mushroom_cow"); // !!! Change [mushroom_cow] to [mooshroom] in this line if you're using Fabric, Forge, and/or Quilt !!!
+}

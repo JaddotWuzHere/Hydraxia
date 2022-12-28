@@ -1,0 +1,38 @@
+biomes:
+  type: EXTRUSION
+  extrusions:
+    - << biome_distribution/stages/caverns/extrude_caverns.yml:extrusions 
+  provider:
+    type: PIPELINE
+    resolution: 2
+    initial-size: 9
+    blend:
+      sampler:
+        type: CONSTANT # handled by palette blending
+    pipeline:
+      source: $biome_distribution/source/source.yml:source
+      
+      stages:
+        - << biome_distribution/stages/zones/distribute_precipitation_zones.yml:stages 
+        
+        - << biome_distribution/stages/distribution/distribute_biome_types.yml:stages 
+        
+        - << biome_distribution/stages/smoothing/expand.yml:stages 
+        - << biome_distribution/stages/smoothing/expand.yml:stages 
+        
+        - << biome_distribution/stages/smoothing/expand.yml:stages
+        
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        
+        - << biome_distribution/stages/smoothing/expand.yml:stages
+        
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+
+        - << biome_distribution/stages/rivers/add_rivers.yml:stages
+        
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 
+        - << biome_distribution/stages/smoothing/smooth.yml:stages 

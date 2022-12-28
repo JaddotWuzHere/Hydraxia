@@ -1,0 +1,4 @@
+num blockSelection = randomInt(1000)/1000;
+if (blockSelection <= 0.7) block(0, 0, 0,"minecraft:ice");
+else if (blockSelection <= 0.85) block(0, 0, 0,"minecraft:blue_ice");
+else block(0, 0, 0,"minecraft:packed_ice");
