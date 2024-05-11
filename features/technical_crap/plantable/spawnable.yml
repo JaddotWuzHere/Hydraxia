@@ -9,7 +9,7 @@ spawnable-blocks:
   
 in-blocks:
   - minecraft:air
-  - minecraft:grass
+  - minecraft:short_grass
   - minecraft:tall_grass
   - minecraft:fern
   - minecraft:snow
@@ -41,7 +41,7 @@ frog-in-blocks:
   - minecraft:air
   - minecraft:snow
   - minecraft:moss_carpet
-  - minecraft:grass
+  - minecraft:short_grass
   - minecraft:tall_grass
   - minecraft:fern
   
@@ -70,7 +70,7 @@ ocelot-spawnable-blocks:
   
 ocelot-in-blocks:
   - minecraft:air
-  - minecraft:grass
+  - minecraft:short_grass
   - minecraft:tall_grass
   - minecraft:fern
   - minecraft:snow
@@ -103,7 +103,7 @@ goat-spawnable-blocks:
 goat-in-blocks:
   - minecraft:air
   - minecraft:snow
-  - minecraft:grass
+  - minecraft:short_grass
   - minecraft:tall_grass
   - minecraft:fern
   
@@ -119,7 +119,7 @@ panda-spawnable-blocks:
 panda-in-blocks:
   - minecraft:air
   - minecraft:snow
-  - minecraft:grass
+  - minecraft:short_grass
   - minecraft:tall_grass
   - minecraft:fern
   
